@@ -6,48 +6,28 @@ title: "Méthodologie"
 
 L'indicateur de biodiversité SPI mesure l'habitat des espèces protégées. Il est calculé comme le ratio de la superficie de l'habitat des espèces protégées à la superficie totale de l'habitat des espèces.
 
+La protection des espèces est estimée avec les aires de répartition et les aires protégées inscrites au registre du Québec. Le score provient de superposition des aires de répartition et des aires protégées de façon à extraire une proportion des aires de répartition qui se retrouvent dans une aire protégée. Le code source utilisé pour le calcul du SPI est accessible sur [GitHub](https://github.com/ReseauBiodiversiteQuebec/SPI/tree/main).
+
 ## Exécution des calculs
 
-Les calculs peuvent être effectués à partir d'un ordinateur personnel en utilisant le script `01-run_spi_computation.r` dans le dossier `scr`.
+Les calculs sont détaillés et les scripts présentés sur la page du [répertoire GitHub](https://github.com/ReseauBiodiversiteQuebec/SPI/tree/main).
 
-Alternativement, les calculs peuvent être effectués à l'aide de clusters avec le script `start.sh` dans le dossier `cluster`.
+L'habitat protégé est calculé par espèce et par année en faisant l'intersection entre les aires de répartition et les aires protégées.
+```
 
 ## Accès aux résultats
 
-Les valeurs SPI par espèce sont enregistrées dans le dataframe `results/SPI.csv`.
+Les résultats par espèce sont enregistrés dans le fichier `results/SPI.csv` du [répertoire GitHub](https://github.com/ReseauBiodiversiteQuebec/SPI/tree/main).
 
-Les résultats sont également sauvegardés dans des fichiers CSV par espèce dans le dossier `results`. Ils peuvent être rassemblés en un seul dataframe en utilisant le script `cluster/02-combine_results.r`.
-
-```r
-# Combinaison des résultats
-source("cluster/02-combine_results.r")
-```
-
-Le dataframe sera enregistré en tant que `results/SPI.csv`.
-
-```r
-# Visualisation des résultats
-source("scr/utils-visualisation.r")
-(SPI <- read.csv("results/SPI.csv"))
-
-plot_SPI_time_series() # Série temporelle des valeurs SPI par espèce
-plot_SPI_scores(year = 2000) # Histogramme des scores SPI pour une année donnée
-plot_SPI_by_group() # Série temporelle des valeurs SPI divisées par groupes d'espèces
-plot_SPI_at_risk() # Série temporelle des valeurs SPI pour les espèces en danger
-```
 
 ## Données
 
-Toutes les données nécessaires pour les analyses sont disponibles dans le dossier `data`.
-
-En tant que preuve de concept initiale, l'indicateur est calculé pour la période 1992-2017 à partir de cartes de répartition complètes. Ces cartes ont été produites par Vencent Bellavance à partir de données d'occurrence provenant de [Biodiversité Québec](https://biodiversite-quebec.ca/). Les cartes de répartition sont disponibles dans le dossier `data`, où chaque fichier `.tif` est nommé d'après une espèce et contient 26 couches, une pour chaque année entre 1992 et 2017.
+En tant que preuve initiale de concept, l'indicateur est calculé pour la période 1992-2017 à partir de cartes de répartition complètes. Ces cartes ont été produites à l'aide de modèles INLA par Vencent Bellavance à partir de données de présences et d'absences provenant de [Biodiversité Québec](https://biodiversite-quebec.ca/). Les cartes de répartition sont disponibles dans le dossier `data`, où chaque fichier `.tif` est nommé d'après une espèce et contient 26 couches, une pour chaque année entre 1992 et 2017.
 
 Les aires protégées proviennent du portail données ouvertes du gouvernement du Québec et sont également disponibles dans le dossier `data`. Seule la couche 'Aires protégées du registre' a été utilisée, et **aucune distinction n'est faite entre les différents types d'aires protégées**. Le jeu de données a été téléchargé le 31-08-2023.
 
 ### Traitement des données
 
-Le jeu de données sur les aires protégées contient plusieurs types d'aires protégées qui peuvent se chevaucher. Le chevauchement pourrait dupliquer la zone protégée et biaiser le calcul du SPI. Pour supprimer le chevauchement entre les différentes aires protégées, la fonction `geos_unary_union` du package `geos` a été utilisée pour unionner les polygones qui se chevauchent. La couche résultante est disponible dans le dossier `data` sous le nom `aires_union.gpkg`.
+Le jeu de données sur les aires protégées contient plusieurs types d'aires protégées qui peuvent se chevaucher. Le chevauchement pourrait dupliquer la zone protégée et biaiser le calcul du SPI. Pour supprimer le chevauchement entre les différentes aires protégées, la fonction `geos_unary_union` du package `geos` a été utilisée pour faire l'union des polygones qui se chevauchent. La couche résultante est disponible dans le dossier `data` sous le nom `aires_union.gpkg`.
 
-## À FAIRE
 
-- [ ] Sélectionner les types d'aires protégées à inclure dans les analyses
