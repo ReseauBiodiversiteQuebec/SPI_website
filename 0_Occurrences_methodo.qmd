@@ -2,4 +2,46 @@
 title: "Méthodologie"
 ---
 
-Description de la méthodologie avec les occurrences
+# Calcul de l'indicateur SPI avec les occurences du CDPNQ
+
+L'indicateur de biodiversité SPI mesure l'habitat des espèces protégées. Il est calculé comme le ratio de la superficie de l'habitat des espèces protégées à la superficie totale de l'habitat des espèces.
+
+La protection des espèces est estimée avec les habitats où elles ont été observées (occurences du CDPNQ) et les aires protégées inscrites au registre du Québec. Le score provient de superposition des habitats et des aires protégées de façon à extraire une proportion des habitats qui se retrouvent dans une aire protégée. Le code source utilisé pour le calcul du SPI est accessible sur [GitHub](https://github.com/ReseauBiodiversiteQuebec/SPI/blob/cdpnq_occurences).
+
+## Exécution des calculs
+
+Les calculs sont détaillés et les scripts présentés sur la page du [répertoire GitHub](https://github.com/ReseauBiodiversiteQuebec/SPI/blob/cdpnq_occurences).
+
+L'habitat protégé est calculé par espèce et par année en faisant l'intersection entre les occurences et les aires protégées.
+
+```R
+spi <- function(range_maps, aires_prot){    
+    intersect <- suppressWarnings(sf::st_intersection(range_maps, aires_prot))
+    SPA <- sf::st_area(intersect) |> as.numeric() |> suppressWarnings() |> sum()
+    
+    if (length(SPA) == 0) return(0)
+
+    SPI <- SPA / sum(as.numeric(sf::st_area(range_maps)))
+    
+    return(SPI)
+}
+```
+
+## Accès aux résultats
+
+Les résultats par espèce sont enregistrés dans le fichier `results/SPI.csv` du [répertoire GitHub](https://github.com/ReseauBiodiversiteQuebec/SPI/blob/cdpnq_occurences).
+
+
+## Données
+
+### Occurrences
+
+Les occurrences ont été téléchargées depuis le portail web [donneesquebec](https://www.donneesquebec.ca/recherche/dataset/occurrences-especes-en-situation-precaire) le 6 décembre 2023 et ont été mises à jour pour la dernière fois le 30 novembre 2023. Aucune modification n'a été apportée aux données, elles ont été utilisées telle-quelles.
+
+### Aires Protégées
+
+Les aires protégées ont été téléchargées depuis le portail web [donneesquebec](https://www.donneesquebec.ca/recherche/dataset/aires-protegees-au-quebec) le 13 novembre 2023 et ont été mises à jour pour la dernière fois le 3 novembre 2023. Seule la couche 'Aires protégées du registre' a été utilisée, et **aucune distinction n'est faite entre les différents types d'aires protégées**.
+
+### Traitement des données
+
+Le jeu de données sur les aires protégées contient plusieurs types d'aires protégées qui peuvent se chevaucher. Le chevauchement pourrait dupliquer la zone protégée et biaiser le calcul du SPI. Pour supprimer le chevauchement entre les différentes aires protégées, la fonction `st_union` du package `sf` a été utilisée pour faire l'union des polygones qui se chevauchent.
