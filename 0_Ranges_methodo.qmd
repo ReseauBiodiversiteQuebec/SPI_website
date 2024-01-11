@@ -1,4 +1,58 @@
 ---
 title: "Méthodologie"
 ---
-Description de la méthodologie avec les aires de distribution
+
+# Calcul de l'indicateur SPI avec les aires de distribution
+
+L'indicateur de biodiversité SPI mesure l'habitat des espèces protégées. Il est calculé comme le ratio de la superficie de l'habitat des espèces protégées à la superficie totale de l'habitat des espèces.
+
+La protection des espèces est estimée avec les habitats où elles peuvent être retrouvées (aires de répartition du MELCCFP) et les aires protégées inscrites au registre du Québec. Le score provient de superposition des aires de répartition et des aires protégées de façon à extraire une proportion des aires de distribution qui se retrouvent dans une aire protégée. Les aires de répartition comprennent la région géographique et ses habitats où l'espèce est estimée être présente. Le code source utilisé pour le calcul du SPI est accessible sur [GitHub](https://github.com/ReseauBiodiversiteQuebec/SPI/blob/section_ranges).
+
+## Exécution des calculs
+
+Les calculs sont détaillés et les scripts présentés sur la page du [répertoire GitHub](https://github.com/ReseauBiodiversiteQuebec/SPI/blob/section_ranges).
+
+L'habitat protégé est calculé par espèce et par année en faisant l'intersection entre les occurrences et les aires protégées.
+
+```R
+spi <- function(range_maps, aires_prot){    
+    intersect <- suppressWarnings(sf::st_intersection(range_maps, aires_prot))
+    SPA <- sf::st_area(intersect) |> as.numeric() |> suppressWarnings() |> sum()
+    
+    if (length(SPA) == 0) return(0)
+
+    SPI <- SPA / sum(as.numeric(sf::st_area(range_maps)))
+    
+    return(SPI)
+}
+```
+
+## Accès aux résultats
+
+Les résultats par espèce sont enregistrés dans le fichier `results/SPI.csv` du [répertoire GitHub](https://github.com/ReseauBiodiversiteQuebec/SPI/blob/section_ranges).
+
+
+## Données
+
+### Cartes de Répartition
+
+Les cartes de répartition ont été obtenues depuis le portail web [donneesquebec](https://www.donneesquebec.ca/recherche/dataset/aires-de-repartition-faune) et ont été téléchargées le 13 novembre 2023. Ces cartes de répartition ont été produites par le MELCCFP et ont été mises à jour pour la dernière fois le 11 septembre 2023. Elles sont disponibles dans le dossier `data_raw`, où chaque fichier `.gpkg` est nommé d'après un groupe d'espèces. On y retrouve les amphibiens, les mammifères terrestres, les poissons d'eau douce et reptiles.
+
+Chaque jeu de données contient 8 champs :
+
+- DESC_ENTIT : Signification de l’entité géographique
+- GRAND_GROUPE : Classification taxonomique
+- PRODUCTEUR : Ministère producteur des données
+- NOM_FRANCA : Nom français officiel de l’espèce utilisé au Québec
+- NOM_ANGLA : Nom anglais de l’espèce
+- NOM_SCIENT : Nom scientifique de l’espèce
+- FAMILLE : Famille de l'espèce dans le système de classification
+- DATE_MAJ : Année de mise à jour des données
+
+### Aires protégées
+
+Les aires protégées ont été téléchargées depuis le portail web [donneesquebec](https://www.donneesquebec.ca/recherche/dataset/aires-protegees-au-quebec) le 13 novembre 2023 et ont été mises à jour pour la dernière fois le 3 novembre 2023. Les données téléchargées sont disponibles dans le dossier `data_raw`. Seule la couche 'Aires protégées du registre' a été utilisée, et **aucune distinction n'est faite entre les différents types d'aires protégées**.
+
+### Traitement des données
+
+Le jeu de données sur les aires protégées contient plusieurs types d'aires protégées qui peuvent se chevaucher. Le chevauchement pourrait dupliquer la zone protégée et biaiser le calcul du SPI. Pour supprimer le chevauchement entre les différentes aires protégées, la fonction `st_union` du package `sf` a été utilisée pour faire l'union des polygones qui se chevauchent. La couche résultante est disponible dans le dossier `data` sous le nom `aires_union.gpkg`.
