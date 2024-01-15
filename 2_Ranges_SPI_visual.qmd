@@ -37,6 +37,15 @@ g <- plot_ly(
   text = sspi_df$POPINFOS[sspi_df$GROUPE == "mean"],
   hoverinfo = "text",
   mode = "lines")
+
+g <- plot_ly(
+  type = "scatter",
+  x = sspi_df$YEAR[sspi_df$GROUPE == "mean"],
+  y = sspi_df$SPI[sspi_df$GROUPE == "mean"],
+  text = sspi_df$POPINFOS[sspi_df$GROUPE == "mean"],
+  hoverinfo = "text",
+  mode = "lines")
+  
 for (i in unique(sspi_df$SPECIES[sspi_df$GROUPE == "other"])) {
   g <- add_lines(g, 
                  x = sspi_df$YEAR[sspi_df$SPECIES == i],
@@ -64,7 +73,7 @@ g |> layout(
     yaxis = list(zeroline = FALSE, title = "SPI"),
     xaxis = list(zeroline = FALSE, title = "Année")
 )
-
+g <- g %>% toWebGL()
 print(g)
 ```
 
@@ -104,7 +113,8 @@ fig <- plot_ly() |>
         xaxis = list(zeroline = FALSE),
         shapes = list(vline(0.17, color = "black"))
     )
-# print(fig)
+
+fig <- fig %>% toWebGL()
 fig
 ```
 
@@ -138,7 +148,8 @@ fig <- plot_ly() |>
         xaxis = list(zeroline = FALSE),
         shapes = list(vline(0.17, color = "black"))
     )
-# print(fig)
+
+fig <- fig %>% toWebGL()
 fig
 ```
 

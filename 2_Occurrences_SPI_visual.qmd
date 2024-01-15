@@ -29,34 +29,48 @@ h <- plot_ly(
   text = sspi_df_occ$POPINFOS[sspi_df_occ$GROUPE == "mean"],
   hoverinfo = "text",
   mode = "lines")
+
 for (i in unique(sspi_df_occ$SPECIES[sspi_df_occ$GROUPE == "other"])) {
 h <- add_lines(h, 
                  x = sspi_df_occ$YEAR[sspi_df_occ$SPECIES == i],
                  y = sspi_df_occ$SPI[sspi_df_occ$SPECIES == i],
                  text = sspi_df_occ$POPINFOS[sspi_df_occ$SPECIES == i],
-                 color = I(rgb(190, 190, 190, alpha = 100, maxColorValue = 255)))
+                 color = I(rgb(190, 190, 190, alpha = 100, maxColorValue = 255)),
+                 name = "Autres")
 }
+
+for (i in unique(sspi_df_occ$SPECIES[sspi_df_occ$GROUPE == "max"])) {
 h <- add_lines(h, 
-          x = sspi_df_occ$YEAR[sspi_df_occ$GROUPE == "max"],
-          y = sspi_df_occ$SPI[sspi_df_occ$GROUPE == "max"],
-          text = sspi_df_occ$POPINFOS[sspi_df_occ$GROUPE == "max"],
-          color = I("#404788FF"))
+                 x = sspi_df_occ$YEAR[sspi_df_occ$SPECIES == i],
+                 y = sspi_df_occ$SPI[sspi_df_occ$SPECIES == i],
+                 text = sspi_df_occ$POPINFOS[sspi_df_occ$SPECIES == i],
+                 color = I(rgb(64, 71, 136, alpha = 100, maxColorValue = 255)),
+                 name = "Maximum")
+}
+
+for (i in unique(sspi_df_occ$SPECIES[sspi_df_occ$GROUPE == "min"])) {
 h <- add_lines(h, 
-          x = sspi_df_occ$YEAR[sspi_df_occ$GROUPE == "min"],
-          y = sspi_df_occ$SPI[sspi_df_occ$GROUPE == "min"],
-          text = sspi_df_occ$POPINFOS[sspi_df_occ$GROUPE == "min"],
-          color = I("#B8DE29FF"))
+                 x = sspi_df_occ$YEAR[sspi_df_occ$SPECIES == i],
+                 y = sspi_df_occ$SPI[sspi_df_occ$SPECIES == i],
+                 text = sspi_df_occ$POPINFOS[sspi_df_occ$SPECIES == i],
+                 color = I(rgb(184, 222, 41, alpha = 100, maxColorValue = 255)),
+                 name = "Minimum")
+}
+
 h <- add_lines(h, 
-          x = sspi_df_occ$YEAR[sspi_df_occ$GROUPE == "mean"],
-          y = sspi_df_occ$SPI[sspi_df_occ$GROUPE == "mean"],
-          text = sspi_df_occ$POPINFOS[sspi_df_occ$GROUPE == "mean"],
-          color = I("#238A8DFF"))
+                x = sspi_df_occ$YEAR[sspi_df_occ$GROUPE == "mean"],
+                y = sspi_df_occ$SPI[sspi_df_occ$GROUPE == "mean"],
+                text = sspi_df_occ$POPINFOS[sspi_df_occ$GROUPE == "mean"],
+                color = I("#238A8DFF"),
+                name = "Moyenne")
+
 h |> layout(
     showlegend = F,
     yaxis = list(zeroline = FALSE, title = "SPI"),
     xaxis = list(zeroline = FALSE, title = "Année")
 )
 
+h <- h %>% toWebGL()
 print(h)
 ```
 
@@ -91,6 +105,7 @@ fig <- plot_ly() |>
         xaxis = list(zeroline = FALSE),
         shapes = list(vline(0.17, color = "black"))
     )
-# print(fig)
+
+fig <- fig %>% toWebGL()
 fig
 ```
