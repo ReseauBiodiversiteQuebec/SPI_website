@@ -47,8 +47,9 @@ quarto::preview()
 ## Structure du Projet
 
 - `/src`: Code source
-- `/results`: Résultats et visualisation
-- `*.qmd` : Documentation
+- `/results`: Résultats
+- `results/img`: visualisations
+- `*.qmd`: Documentation
 
 ## Contribuer aux travaux
 

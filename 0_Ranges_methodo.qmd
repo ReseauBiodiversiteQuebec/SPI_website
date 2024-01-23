@@ -12,7 +12,7 @@ La protection des espèces est estimée avec les habitats où elles peuvent êtr
 
 Les calculs sont détaillés et les scripts présentés sur la page du [répertoire GitHub](https://github.com/ReseauBiodiversiteQuebec/SPI/blob/section_ranges).
 
-L'habitat protégé est calculé par espèce et par année en faisant l'intersection entre les occurrences et les aires protégées.
+L'habitat protégé est calculé par espèce et par année en faisant l'intersection entre les occurrences et les aires protégées. De plus, l'analyse est effectuée pour l'ensemble du Québec et pour les régions sous (sud) et au dessus (nord du Québec) du 50e parallèle.
 
 ```R
 spi <- function(range_maps, aires_prot){    
@@ -29,7 +29,7 @@ spi <- function(range_maps, aires_prot){
 
 ## Accès aux résultats
 
-Les résultats par espèce sont enregistrés dans le fichier `results/SPI.csv` du [répertoire GitHub](https://github.com/ReseauBiodiversiteQuebec/SPI/blob/section_ranges).
+Les résultats par espèce sont enregistrés dans le fichier `results/SPI_ranges.csv` du [répertoire GitHub](https://github.com/ReseauBiodiversiteQuebec/SPI/blob/section_ranges).
 
 
 ## Données
@@ -56,3 +56,5 @@ Les aires protégées ont été téléchargées depuis le portail web [donneesqu
 ### Traitement des données
 
 Le jeu de données sur les aires protégées contient plusieurs types d'aires protégées qui peuvent se chevaucher. Le chevauchement pourrait dupliquer la zone protégée et biaiser le calcul du SPI. Pour supprimer le chevauchement entre les différentes aires protégées, la fonction `st_union` du package `sf` a été utilisée pour faire l'union des polygones qui se chevauchent. La couche résultante est disponible dans le dossier `data` sous le nom `aires_union.gpkg`.
+
+Pour l'analyse à l'échelle du Québec, toutes les aires protégées ont été utilisées. Pour l'analyse à l'échelle du sud et du nord du Québec, la couche d'aires protégées a été 'coupée' pour ne conserver que la portion des aires qui se trouvent au sud ou au nord du 50e parallèle. La même procédure a été utilisée pour les cartes de répartition. Les analyses pour l'ensemble du Québec et pour chacune des régions ont été effectuées séparément.

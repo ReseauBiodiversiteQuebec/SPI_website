@@ -6,6 +6,14 @@ title: "Exploration"
 
 ![](/results/img/OCC_SPI_by_group.png)
 
+La protection des occurences est suppérieure à celle des aires de distribution. Les habitats où la présence d'une espèce à statut est constatée sont mieux protégés. Pour ainsi dire, les efforts de protection du territoire se concentrent et représentent mieux les habitats où les espèces sont observés.
+
+## SPI par nombre d'occurences
+
+![](results/img/OCC_SPI_occurences.png)
+
+Beaucoup de variance dans la protection des occurences. Certaines espèces sont entièrement protégées et d'autres très peu. Cela peut être en lien avec le nombre d'occurences. 
+
 
 ## Scores SPI
 

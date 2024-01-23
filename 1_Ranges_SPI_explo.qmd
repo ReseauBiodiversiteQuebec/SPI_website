@@ -6,11 +6,20 @@ title: "Exploration"
 
 ![](results/img/RANGES_SPI_by_group.png)
 
+Augmentation générale de la protection des aires de distribution des espèces : aujourd'hui ~12% des aires de distribution sont protégées.
+
+Certaines espèces sont très bien protégées et d'autres beaucoup moins. Les reptiles s'illustrent, en moyenne, comme les espèces les moins protégées alors que les mammifères sont, en moyenne, les mieux protégés. 
+
+Alors qu'on note une augmentation générale de la protection des aires de distribution des espèces, la tendance suit de près celle du territoire protégé au Québec. 
 
 ## Scores SPI
 
 ![](results/img/RANGES_SPI_scores.png)
 
+On note un déplacement de la distribution des scores SPI vers la droite, ce qui indique une augmentation de la protection des aires de distribution des espèces. Aussi, la distribution des scores SPI est plus étalée, ce qui indique une augmentation de la variabilité de la protection des aires de distribution des espèces.
+
 ## Scores SPI par régions
 
 ![](results/img/RANGES_SPI_regions.png)
+
+La protection de la distribution des espèces au nord du Québec présente plus de variabilité que celle au sud. Certaines espèces sont mieux protégées que dans le sud, mais les moyennes sont similaires.
