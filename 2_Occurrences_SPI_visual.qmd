@@ -4,7 +4,7 @@ title: "Visualisation"
 ```{r OCCS_init, include = F}
 # packages & data
 library(knitr)
-source("scr/RANGES_data_n_figures_visual.r")
+source("scr/data_n_figures_visual.r")
 
 # ----------------------------
 # --- last SPI - distribution
@@ -91,7 +91,7 @@ fig <- plot_ly() |>
         name = "", # remove the "trace 0 " in the popup
         type = "bar",
         orientation = "h",
-        color = I(col_pal[3]),
+        color = I(col_pal[4]),
         marker = list(
             line = list(color = "white",
                         width = 0.2)),
@@ -109,3 +109,135 @@ fig <- plot_ly() |>
 fig <- fig %>% toWebGL()
 fig
 ```
+
+## **Etat de la protection des espèces du nord vs. du Sud**  
+*Une espèce est considérée du nord si la latitude du centroïde de son aire de répartition est supérieure à 55°. Inversement, une espèce dont la latitude du centroïde de son aire de répartition est inférieure ou égale à cette valeur seuil, sera considérée comme une espèce du sud.*  
+Les espèces du Nord présentent un SPI moyen de 17% (sd = 4%).  
+Les espèces du Sud présentent un SPI moyen 9% (sd = 8%).  
+
+:::{.panel-tabset}
+
+## Nord
+```{r OCC_SPI_2023_N, echo=F, warning = FALSE}
+# conversion from species characters to ordered levels of factor for keeping increasing SPI
+last_socc_N$vernacular_fr <- last_socc_N$SPECIES
+last_socc_N$group_fr <- "Nord"
+last_socc_N$vernacular_fr2 <- factor(last_socc_N$vernacular_fr, levels = last_socc_N$vernacular_fr[order(last_socc_N$SPI_NORTH, decreasing = FALSE)])
+
+
+fig <- plot_ly() |>
+    add_bars(
+        data = last_socc_N,
+        x = ~SPI_NORTH,
+        y = ~vernacular_fr2,
+        type = "bar",
+        orientation = "h",
+        color = ~group_fr,
+        colors = col_pal[2],
+        hovertemplate = paste(
+            "<b>%{y}</b><br>",
+            "<b>SPI</b> = %{x}"
+        )
+    ) |>
+    layout(
+        showlegend = F,
+        yaxis = list(zeroline = FALSE, title = "Espèce", showticklabels = FALSE),
+        xaxis = list(zeroline = FALSE),
+        shapes = list(vline(0.17, color = "black"))
+    )
+
+fig <- fig %>% toWebGL()
+fig
+```
+## Sud
+
+```{r OCC_SPI_2023_S, echo=F, warning = FALSE}
+# conversion from species characters to ordered levels of factor for keeping increasing SPI
+last_socc_S$vernacular_fr <- last_socc_S$SPECIES
+last_socc_S$group_fr <- "Sud"
+last_socc_S$vernacular_fr2 <- factor(last_socc_S$vernacular_fr, levels = last_socc_S$vernacular_fr[order(last_socc_S$SPI_SOUTH, decreasing = FALSE)])
+
+
+fig <- plot_ly() |>
+    add_bars(
+        data = last_socc_S,
+        x = ~SPI_SOUTH,
+        y = ~vernacular_fr2,
+        type = "bar",
+        orientation = "h",
+        color = ~group_fr,
+        colors = col_pal[3],
+        hovertemplate = paste(
+            "<b>%{y}</b><br>",
+            "<b>SPI</b> = %{x}"
+        )
+    ) |>
+    layout(
+        showlegend = F,
+        yaxis = list(zeroline = FALSE, title = "Espèce", showticklabels = FALSE),
+        xaxis = list(zeroline = FALSE),
+        shapes = list(vline(0.17, color = "black"))
+    )
+
+fig <- fig %>% toWebGL()
+fig
+```
+## Nord-Sud
+```{r RANGES_SPI_2023_NS, echo=F, warning = FALSE}
+#| label: fig-spi_2023_NordSud
+#| fig-cap: "Valeur de l'indicateur de protection des espèces en 2023, à partir des données d'aires de distribution (n = 225), groupé par espèce du Nord vs. du Sud."
+#| warning: false
+
+# conversion from species characters to ordered levels of factor for keeping increasing SPI
+last_socc_NS$vernacular_fr <- last_socc_NS$SPECIES
+nord <- last_socc_NS[last_socc_NS$LOC == "Nord",]
+nord$vernacular_fr2 <- factor(nord$vernacular_fr, levels = nord$vernacular_fr[order(nord$SPI, decreasing = FALSE)])
+
+sud <- last_socc_NS[last_socc_NS$LOC == "Sud",]
+sud$vernacular_fr2 <- factor(sud$vernacular_fr, levels = sud$vernacular_fr[order(sud$SPI, decreasing = FALSE)])
+
+fig_N <- plot_ly() |>
+    add_bars(
+        data = nord,
+        x = ~SPI,
+        y = ~vernacular_fr2,
+        type = "bar",
+        orientation = "h",
+        color = ~LOC,
+        colors = col_pal[2],
+        hovertemplate = paste(
+            "<b>%{y}</b><br>",
+            "<b>SPI</b> = %{x}"
+        )
+    )   %>% 
+  layout(
+        yaxis = list(zeroline = FALSE, title = "Espèce", showticklabels = FALSE),
+        xaxis = list(zeroline = FALSE),
+        shapes = list(vline(0.17, color = "black"))
+    ) 
+fig_S <- plot_ly() |>
+    add_bars(
+        data = sud,
+        x = ~SPI,
+        y = ~vernacular_fr2,
+        type = "bar",
+        orientation = "h",
+        color = ~LOC,
+        colors = col_pal[3],
+        hovertemplate = paste(
+            "<b>%{y}</b><br>",
+            "<b>SPI</b> = %{x}"
+        )
+    )    %>% 
+  layout(
+        yaxis = list(zeroline = FALSE, title = "Espèce", showticklabels = FALSE),
+        xaxis = list(zeroline = FALSE),
+        shapes = list(vline(0.17, color = "black"))
+    ) 
+
+fig <- subplot(fig_N, fig_S) 
+  
+  fig <- fig %>% toWebGL()
+fig
+```
+:::

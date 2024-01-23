@@ -2,4 +2,4 @@
 title: "Indicateurs de biodiversité"
 ---
 
-Ceci est un epage pour les généralités autour des travaux présentés ici.
+Ceci est une page pour les généralités autour des travaux présentés ici.

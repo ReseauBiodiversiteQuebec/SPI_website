@@ -2,4 +2,19 @@
 title: "Histoire de biodiversité"
 ---
 
-Ceci est la page pour raconter une histoire de biodiversité.
+## Points clé
+
+### Aires protégées du Québec
+- carte (figure 1) de représentation des aires protégées du Québec  
+- aire totale de protection actuelle = 28 060 703 ha (69 339 507 acres)
+- point historique sur l'augmentation de la surface protégée (exploration autour des années 1981 et 2003)
+
+### Évolution du niveau de protection des habitats de espèces ciblées
+- augmentation de la surface protégée des habitats pour toutes les espèces depuis les 61 dernières années
+
+### État de la protection des habitats des espèces se trouvant dasns le Nord vs. dans le Sud
+- constat d'une plus grande surface d'habitat protégée pour les espèces du Nord
+
+### État de la protection des habitats des espèces regroupées par groupe taxonomique (Amphibien, Mammifère, Poisson, Reptile)
+
+### Identification de cas extrême
