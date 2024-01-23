@@ -10,7 +10,7 @@ L'indice de protection des espèces est un indicateur de biodiversité qui vise 
 ```{r indic_protec_INIT, include = F}
 # packages & data
 library(knitr)
-source("scr/RANGES_data_n_figures_visual.r")
+source("scr/data_n_figures_visual.r")
 
 # colors
 col_pal <- c("#440154FF", "#39568CFF", "#1F968BFF", "#73D055FF")
@@ -24,15 +24,7 @@ En 2023, le Québec présente une superficie totale d'aire protégée équivalen
 #| label: fig-aires_prot
 #| fig-cap: "Carte des aires protégées actuelles."
 #| warning: false
-# aires_latlon$year <- as.factor(aires_latlon$year)
-# mapview(aires,
-#         # col.regions = "#238A8DFF",
-#         popup = T,
-#         legend = F,
-#         zcol = "year"
-#         # , burst = T
-#         )
-# col_pal <- viridis(4, direction = -1)
+
 m <- leaflet(aires_latlon) |>
     addTiles() |>
     addPolygons(
@@ -105,4 +97,31 @@ m <- leaflet(aires_latlon) |>
         options = layersControlOptions(collapsed = FALSE)
     )
 m
+```
+
+## **Augmentation de l'aire de surface protégée au Québec au cours du temps **
+
+```{r protected_areas_growth, echo=F}
+#| label: fig-aires_prot_growth
+#| fig-cap: "Superficie cumulée des aires protégées au Québec au cours du temps."
+#| warning: false
+
+aire <- read.csv("/home/local/USHERBROOKE/juhc3201/BDQC-GEOBON/GITHUB/SPI_website/data_clean/protected_areas_time_series.csv")[, c(1, 3)]
+
+s_aire <- as.data.frame(smooth_ksmooth(as.matrix(aire)))
+names(s_aire) <- c("year", "aire")
+s_aire$POPINFOS <- paste0(
+    "</b><br>Année <b>", floor(s_aire$year),
+    "</b><br>Aire cumulée = <b>", round(s_aire$aire, digits = 0), " km2</b>")
+h <- plot_ly(
+  type = "scatter",
+  data = s_aire,
+  x = ~year,
+  y = ~aire,
+  text = ~POPINFOS,
+  color = I(col_pal[3]),
+  hoverinfo = "text",
+  mode = "lines")
+
+h
 ```
