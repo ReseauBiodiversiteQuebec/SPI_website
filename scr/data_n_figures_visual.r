@@ -139,6 +139,17 @@ SOCC <- SOCC[!(SOCC$SPECIES == "Information masquée"), ]
 species <- as.character(unique(SOCC$SPECIES))
 years <- as.numeric(unique(SOCC$YEAR))
 
+# Recup des infos sur les sp dans Atlas --> inconplet majoritairement pour les espèces végégtales
+# spe_ls <- stringr::str_split(species, " ")
+# spe2 <- lapply(spe_ls, function(x) {
+#     spe <- paste(x[1], x[2])
+#     spe
+# })
+# species <- as.vector(do.call("rbind", spe2))
+# info_spe <- get_taxa(scientific_name = unique(species))
+
+# species[!(species %in% info_spe$observed_scientific_name)]
+
 # smoothing the curves
 spi_ls <- split(SOCC, SOCC$SPECIES)
 
