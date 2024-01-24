@@ -106,7 +106,7 @@ m
 #| fig-cap: "Superficie cumulée des aires protégées au Québec au cours du temps."
 #| warning: false
 
-aire <- read.csv("/home/local/USHERBROOKE/juhc3201/BDQC-GEOBON/GITHUB/SPI_website/data_clean/protected_areas_time_series.csv")[, c(1, 3)]
+aire <- read.csv("data_clean/protected_areas_time_series.csv")[, c(1, 3)]
 
 s_aire <- as.data.frame(smooth_ksmooth(as.matrix(aire)))
 names(s_aire) <- c("year", "aire")
