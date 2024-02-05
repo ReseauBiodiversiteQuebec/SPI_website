@@ -80,7 +80,7 @@ print(g)
 ## **Valeurs des indices de protection des espèces en 2023**
 ```{r RANGES_SPI_2023, echo=F, warning = FALSE}
 #| label: fig-spi_occ_2023
-#| fig-cap: "Valeur de l'indicateur de protection des espèces en 2023, à partir des données d'occurrences (n = 503)."
+#| fig-cap: "Valeur de l'indicateur de protection des espèces en 2023, à partir des données d'aires de répartition (n = 225)."
 #| warning: false
 
 # conversion from species characters to ordered levels of factor for keeping increasing SPI
@@ -105,7 +105,7 @@ fig <- plot_ly() |>
     ) |>
     layout(
         yaxis = list(zeroline = FALSE, title = "Espèce", showticklabels = FALSE),
-        xaxis = list(zeroline = FALSE),
+        xaxis = list(zeroline = FALSE, title = "Indice de protection des espèces"),
         shapes = list(vline(0.17, color = "black"))
     )
 
@@ -122,6 +122,10 @@ Les espèces du Sud présentent un SPI moyen 9% (sd = 8%).
 
 ## Nord
 ```{r RANGES_SPI_2023_N, echo=F, warning = FALSE}
+#| label: fig-spi_2023_Nord
+#| fig-cap: "Valeur de l'indicateur de protection des espèces en 2023, à partir des données d'aires de distribution (n = 225) pour les espèces retrouuvées dans le Nord."
+#| warning: false
+#| 
 # conversion from species characters to ordered levels of factor for keeping increasing SPI
 last_spi_N$vernacular_fr2 <- factor(last_spi_N$vernacular_fr, levels = last_spi_N$vernacular_fr[order(last_spi_N$SPI, decreasing = FALSE)])
 
@@ -143,7 +147,7 @@ fig <- plot_ly() |>
     layout(
         showlegend = F,
         yaxis = list(zeroline = FALSE, title = "Espèce", showticklabels = FALSE),
-        xaxis = list(zeroline = FALSE),
+        xaxis = list(zeroline = FALSE, title = "Indice de protection des espèces"),
         shapes = list(vline(0.17, color = "black"))
     )
 
@@ -153,6 +157,10 @@ fig
 ## Sud
 
 ```{r RANGES_SPI_2023_S, echo=F, warning = FALSE}
+#| label: fig-spi_2023_Sud
+#| fig-cap: "Valeur de l'indicateur de protection des espèces en 2023, à partir des données d'aires de distribution (n = 225) pour les espèces retrouuvées dans le Sud."
+#| warning: false
+#| 
 # conversion from species characters to ordered levels of factor for keeping increasing SPI
 last_spi_S$vernacular_fr2 <- factor(last_spi_S$vernacular_fr, levels = last_spi_S$vernacular_fr[order(last_spi_S$SPI, decreasing = FALSE)])
 
@@ -174,7 +182,7 @@ fig <- plot_ly() |>
     layout(
         showlegend = F,
         yaxis = list(zeroline = FALSE, title = "Espèce", showticklabels = FALSE),
-        xaxis = list(zeroline = FALSE),
+        xaxis = list(zeroline = FALSE, title = "Indice de protection des espèces"),
         shapes = list(vline(0.17, color = "black"))
     )
 
@@ -184,7 +192,7 @@ fig
 ## Nord-Sud
 ```{r RANGES_SPI_2023_NS, echo=F, warning = FALSE}
 #| label: fig-spi_2023_NordSud
-#| fig-cap: "Valeur de l'indicateur de protection des espèces en 2023, à partir des données d'aires de distribution (n = 225), groupé par espèce du Nord vs. du Sud."
+#| fig-cap: "Valeur de l'indicateur de protection des espèces en 2023, à partir des données d'aires de distribution (n = 225) pour les espèces retrouuvées dans le Nord et le Sud."
 #| warning: false
 
 # conversion from species characters to ordered levels of factor for keeping increasing SPI
@@ -210,7 +218,7 @@ fig_N <- plot_ly() |>
     )   %>% 
   layout(
         yaxis = list(zeroline = FALSE, title = "Espèce", showticklabels = FALSE),
-        xaxis = list(zeroline = FALSE),
+        xaxis = list(zeroline = FALSE, title = "Indice de protection des espèces"),
         shapes = list(vline(0.17, color = "black"))
     ) 
 fig_S <- plot_ly() |>
@@ -266,7 +274,7 @@ fig <- plot_ly() |>
     ) |>
     layout(
         yaxis = list(zeroline = FALSE, title = "Espèce", showticklabels = FALSE),
-        xaxis = list(zeroline = FALSE),
+        xaxis = list(zeroline = FALSE, title = "Indice de protection des espèces"),
         shapes = list(vline(0.17, color = "black"))
     )
 
