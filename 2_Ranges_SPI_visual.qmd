@@ -114,7 +114,7 @@ fig
 ```
 
 ## **Etat de la protection des espèces du nord vs. du Sud**  
-*Une espèce est considérée du nord si la latitude du centroïde de son aire de répartition est supérieure à 55°. Inversement, une espèce dont la latitude du centroïde de son aire de répartition est inférieure ou égale à cette valeur seuil, sera considérée comme une espèce du sud.*  
+  
 Les espèces du Nord présentent un SPI moyen de 17% (sd = 4%).  
 Les espèces du Sud présentent un SPI moyen 9% (sd = 8%).  
 
