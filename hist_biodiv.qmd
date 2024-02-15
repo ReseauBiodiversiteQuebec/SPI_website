@@ -2,19 +2,74 @@
 title: "Histoire de biodiversité"
 ---
 
-## Points clé
+## Points clefs
+
+### Contexte
+
+Le Québec a annoncé le 31 décembre 2020 avoir atteint son objectif de protection de 17% du territoire ([registre des aires protégées du Québec](https://www.environnement.gouv.qc.ca/biodiversite/aires_protegees/registre/)) YAY !!! Est-ce que la biodiversité est représentée par ces aires protégées ?
+
+Nous avons mesuré pour plusieurs espèces la quantité d'habitats favorable qui se trouve protégée et avons estimé la représentativité de la biodiversité dans les aires protégées. Nous avons mesuré la proportion de l'aire de répartition de plusieurs espèces (Amphibiens, Mammifères, Poissons, Reptiles) qui se trouve protégée par des aires protégées inscrites au registre du Québec. Ces aires de répartition informent sur la présence de l'espèce au Québec et la proportion de ces aires qui sont protégées nous informe sur la représentativité de la biodiversité dans les aires protégées.
+
+Nous avons comparé ces résultats à ceux obtenus avec les occurrences du CDPNQ. Ces dernières se concentrent sur les espèces en situation précaire et sont construites à partir d'une ou de plusieurs observations. Informé par les observations, une zone délimitant l'habitat utilisé par la population est tracée pour définir l'occurrence. Les occurrences représentent donc l'habitat utilisé par une population locale. 
+
+L'intérêt de cette comparaison est de voir si la protection des habitats où la présence d'une espèce est confirmée est comparable à la protection des habitats potentiels de l'espèce (aire de distribution). 
+
+Puisqu'il existe une disparité entre le sud et le nord du Québec dans la superficie protégée du territoire, nous avons aussi mesuré séparément la quantité d'habitat protégé pour le nord et sud.
+
+### Messages clés
+
+- Augmentation de la protection pour tous les groupes d'espèces
+- Distribution des aires protégées : plus d'aires dans le nord et certaines créations d'aires ont marqué de grandes augmentations dans la couverture du territoire
+- Les espèces du nord sont mieux protégées que celles du sud
+- Certaines espèces sont mieux protégées que d'autres
+- Biodiversité Québec est au centre de la communication et du suivi de la biodiversité du Québec
+
 
 ### Aires protégées du Québec
-- carte (figure 1) de représentation des aires protégées du Québec  
-- aire totale de protection actuelle = 28 060 703 ha (69 339 507 acres)
-- point historique sur l'augmentation de la surface protégée (exploration autour des années 1981 et 2003)
+- Carte (figure 1) de représentation des aires protégées du Québec (la carte n'est pas à jour avec les chiffres qui suivent, toujours en attente de la mise à jour du MELCCFP)
+- Au 30 septembre 2023, le réseau d’aires protégées de l’ensemble du Québec s’étend sur 274 374 km2 ou 16,42% du territoire
+  - Milieu continental (terrestre et eaux douces) : 255 381 km2 ou 16,89%
+  - Milieu marin et côtier : 18 992 km2 ou 12,21%
+  - Le territoire du Plan Nord (Au delà du 49e parallèle) est protégé sur 19,17% de sa superficie
+- Importante accélération de la protection du territoire depuis le début des années 2000
+- Distribution des aires protégées : plus d'aires dans le nord et certaines créations d'aires ont marqué de grandes augmentations dans la couverture du territoire
 
-### Évolution du niveau de protection des habitats de espèces ciblées
-- augmentation de la surface protégée des habitats pour toutes les espèces depuis les 61 dernières années
+### Protection des espèces
 
-### État de la protection des habitats des espèces se trouvant dasns le Nord vs. dans le Sud
-- constat d'une plus grande surface d'habitat protégée pour les espèces du Nord
+**Aires de distribution**
+
+Visualisation des résultats dans l'[onglet](https://reseaubiodiversitequebec.github.io/SPI_website/2_Ranges_SPI_visual.html) dédié au projet.
+
+- Augmentation de la protection pour tous les groupes d'espèces
+- En moyenne, 11% de la superficie des aires de distribution se trouvent dans des aires protégées. C'est en deçà de l'objectif de 17% de protection du territoire.
+- Nombre d'espèces protégées à 17% : 21 espèces (9.33%)
+  - 94 (41,78%) dans le nord
+  - 7 (3.1%) dans le sud
+
+**Occurrences**
+
+Visualisation des résultats dans l'[onglet](https://reseaubiodiversitequebec.github.io/SPI_website/2_Occurrences_SPI_visual.html) dédié au projet.
+
+- En moyenne, 35% de la superficie des occurrences d'une espèce se trouve dans des aires protégées
+- Interprétations possibles : 
+  - Les aires protégées protègent davantage les habitats utilisés par les espèces en situation précaire
+  - Les espèces en situation précaire sont plus souvent observées dans des aires protégées
+  - Réalité : un peu des deux
+- Nombre d'espèces protégées à 17% : 283 espèces (56,6%)
+  - 79 (15,8%) dans le nord
+  - 232 (46,4%) dans le sud
+
+### Protection des espèces dans le Nord vs. dans le Sud
+- Les espèces du nord sont mieux protégées que celles du sud : 
+  - 23,9% de la superfice > 50e parallèle vs. 7,8% sous le 50e parallèle de la superficie des aires de distribution est protégée
+  - 64,6% de la superfice > 50e parallèle vs. 27% sous le 50e parallèle de la superficie des occurrences est protégée
 
 ### État de la protection des habitats des espèces regroupées par groupe taxonomique (Amphibien, Mammifère, Poisson, Reptile)
 
 ### Identification de cas extrême
+
+### Méthodologie
+
+La méthodologie est présentée dans l'[onglet](https://reseaubiodiversitequebec.github.io/SPI_website/indic_protec_esp.html) Indice de Protection des Espèces du site web dédié au projet.
+
+La méthodologie utilisée pour le calcul est basée sur la méthode de l'Indice de Protection des Espèces tel que présenté par [GEO BON](https://geobon.org/ebvs/indicators/species-protection-index/) (SPI). 
