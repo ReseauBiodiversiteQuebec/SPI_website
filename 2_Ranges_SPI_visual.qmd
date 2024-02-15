@@ -16,6 +16,14 @@ last_spi_occ$SPI2 <- round(last_spi_occ$SPI, digits = 3)
 
 # colors
 col_pal <- c("#440154FF", "#39568CFF", "#1F968BFF", "#73D055FF")
+
+# SPI metrics
+mean_SPI_NORTH <- mean(last_spi_N$SPI_NORTH, na.rm = T)*100
+sd_SPI_NORTH <- sd(last_spi_N$SPI_NORTH, na.rm = T)*100
+
+mean_SPI_SOUTH <- mean(last_spi_S$SPI_SOUTH, na.rm = T)*100
+sd_SPI_SOUTH <- sd(last_spi_S$SPI_SOUTH, na.rm = T)*100
+
 ```
 
 ## **Augmentation de la protection de toutes les espèces ciblées au cours des 61 dernières années**  
@@ -115,8 +123,8 @@ fig
 
 ## **Etat de la protection des espèces du nord vs. du Sud**  
   
-Les espèces du Nord présentent un SPI moyen de 17% (sd = 4%).  
-Les espèces du Sud présentent un SPI moyen 9% (sd = 8%).  
+Les espèces du Nord présentent un SPI moyen de `r mean_SPI_NORTH`­­% (sd = `r sd_SPI_NORTH`­%).  
+Les espèces du Sud présentent un SPI moyen `r mean_SPI_SOUTH`­% (sd = `r sd_SPI_SOUTH`%).  
 
 :::{.panel-tabset}
 
