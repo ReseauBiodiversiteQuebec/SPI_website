@@ -2,6 +2,20 @@
 title: "Histoire de biodiversité"
 ---
 
+
+```{r}
+#| echo: false
+
+# Load data
+SPI_OCC <- read.csv("results/SPI_OCC.csv")
+SPI_OCC_2023 <- SPI_OCC[SPI_OCC$YEAR == 2023,]
+
+SPI_RANGES <- read.csv("results/SPI_ranges.csv")
+SPI_RANGES_2023 <- SPI_RANGES[SPI_RANGES$YEAR == 2023,]
+
+```
+
+
 ## Points clefs
 
 ### Contexte
@@ -42,9 +56,9 @@ Visualisation des résultats dans l'[onglet](https://reseaubiodiversitequebec.gi
 
 - Augmentation de la protection pour tous les groupes d'espèces
 - En moyenne, 11% de la superficie des aires de distribution se trouvent dans des aires protégées. C'est en deçà de l'objectif de 17% de protection du territoire.
-- Nombre d'espèces protégées à 17% : 21 espèces (9.33%)
-  - 94 (41,78%) dans le nord
-  - 7 (3.1%) dans le sud
+- Nombre d'espèces protégées à 17% : `r sum(SPI_RANGES_2023$SPI >= 0.17, na.rm = T)` espèces (`r sum(SPI_RANGES_2023$SPI >= 0.17, na.rm = T) / nrow(SPI_RANGES_2023) * 100`%)
+  - `r sum(SPI_RANGES_2023$SPI_NORTH >= 0.17, na.rm = T)` espèces (`r sum(SPI_RANGES_2023$SPI_NORTH >= 0.17, na.rm = T) / nrow(SPI_RANGES_2023) * 100`%) dans le nord
+  - `r sum(SPI_RANGES_2023$SPI_SOUTH >= 0.17, na.rm = T)` espèces (`r sum(SPI_RANGES_2023$SPI_SOUTH >= 0.17, na.rm = T) / nrow(SPI_RANGES_2023) * 100`%) dans le sud
 
 **Occurrences**
 
@@ -55,14 +69,14 @@ Visualisation des résultats dans l'[onglet](https://reseaubiodiversitequebec.gi
   - Les aires protégées protègent davantage les habitats utilisés par les espèces en situation précaire
   - Les espèces en situation précaire sont plus souvent observées dans des aires protégées
   - Réalité : un peu des deux
-- Nombre d'espèces protégées à 17% : 283 espèces (56,6%)
-  - 79 (15,8%) dans le nord
-  - 232 (46,4%) dans le sud
+- Nombre d'espèces protégées à 17% : `r sum(SPI_OCC_2023$SPI >= 0.17, na.rm = T)` espèces (`r sum(SPI_OCC_2023$SPI >= 0.17, na.rm = T) / nrow(SPI_OCC_2023) * 100`%)
+  - `r sum(SPI_OCC_2023$SPI_NORTH >= 0.17, na.rm = T)` espèces (`r sum(SPI_OCC_2023$SPI_NORTH >= 0.17, na.rm = T) / nrow(SPI_OCC_2023) * 100`%) dans le nord
+  - `r sum(SPI_OCC_2023$SPI_SOUTH >= 0.17, na.rm = T)` espèces (`r sum(SPI_OCC_2023$SPI_SOUTH >= 0.17, na.rm = T) / nrow(SPI_OCC_2023) * 100`%) dans le sud
 
 ### Protection des espèces dans le Nord vs. dans le Sud
 - Les espèces du nord sont mieux protégées que celles du sud : 
-  - 23,9% de la superfice > 50e parallèle vs. 7,8% sous le 50e parallèle de la superficie des aires de distribution est protégée
-  - 64,6% de la superfice > 50e parallèle vs. 27% sous le 50e parallèle de la superficie des occurrences est protégée
+  - `r mean(SPI_RANGES_2023$SPI_NORTH, na.rm = T)`% de la superfice > 50e parallèle vs. `r mean(SPI_RANGES_2023$SPI_SOUTH, na.rm = T)`% sous le 50e parallèle de la superficie des aires de distribution est protégée
+  - `r mean(SPI_OCC_2023$SPI_NORTH, na.rm = T)`% de la superfice > 50e parallèle vs. `r mean(SPI_OCC_2023$SPI_SOUTH, na.rm = T)`% sous le 50e parallèle de la superficie des occurrences est protégée
 
 ### État de la protection des habitats des espèces regroupées par groupe taxonomique (Amphibien, Mammifère, Poisson, Reptile)
 
