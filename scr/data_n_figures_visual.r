@@ -77,8 +77,19 @@ info_spe2 <- read.csv("./data_clean/ATLAS_info_spe_distri.csv")[, -1]
 # adding species info from Atlas (et al) with a left_join
 SPI <- left_join(SPI, info_spe2, by = join_by("SPECIES" == "observed_scientific_name"))
 
-# smoothing the curves
+
+# Computation of the SPI increase from 1876 to 2023
 spi_ls <- split(SPI, SPI$SPECIES)
+
+SPI_diff <- lapply(spi_ls, function(x){
+    latin <- unique(x$SPECIES)
+    vern <- unique(x$vernacular_fr)
+    trend <- x$SPI[x$YEAR == 2023] - x$SPI[x$YEAR == 1876]
+    td <- data.frame(data = "range_map", species = latin, vernacular = vern,  trend = trend)
+})
+SPI_trend_range <- do.call("rbind", SPI_diff)
+
+# smoothing the curves
 
 spi_smoo <- lapply(spi_ls, function(x) {
     m <- cbind(x$YEAR, x$SPI)
@@ -238,3 +249,9 @@ last_socc_NS <- data.frame(SPECIES = rep(df2$SPECIES, 2),
 last_spi <- SPI[SPI$YEAR == 2023, ]
 # fill informations about species
 # last_spi <- left_join(last_spi, info_spe2, by = join_by("SPECIES" == "observed_scientific_name"))
+
+spi_taxo <- last_spi %>%
+            group_by(group_fr) %>%
+            summarize(n = length(SPI),
+                      mean = mean(SPI, na.rm = T),
+                      sd = sd(SPI, na.rm = T))

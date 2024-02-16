@@ -16,21 +16,12 @@ last_spi_occ$SPI2 <- round(last_spi_occ$SPI, digits = 3)
 
 # colors
 col_pal <- c("#440154FF", "#39568CFF", "#1F968BFF", "#73D055FF")
-
-# SPI metrics
-mean_SPI_NORTH <- mean(last_spi_N$SPI_NORTH, na.rm = T)*100
-sd_SPI_NORTH <- sd(last_spi_N$SPI_NORTH, na.rm = T)*100
-
-mean_SPI_SOUTH <- mean(last_spi_S$SPI_SOUTH, na.rm = T)*100
-sd_SPI_SOUTH <- sd(last_spi_S$SPI_SOUTH, na.rm = T)*100
-
 ```
 
 ## **Augmentation de la protection de toutes les espèces ciblées au cours des 61 dernières années**  
-Augmentation minimale de 1% pour la Salamande sombre des montagnes (*Desmognathus ochrophaeus*)  
-Augmentation maximale de 70% pour la Rainette faux grillon (*Pseudacris maculata*)  
-Avec une moyenne de 11% pour les 225 espèces considérées  
-À mettre en lien avec le seuil Aichi de 17% et/ou les cibles du cadre mondial de la biodiversité 
+Augmentation minimale de `r round(min(SPI_trend_range$trend)*100, digit = 0)`% pour `r SPI_trend_range$vernacular[SPI_trend_range$trend == min(SPI_trend_range$trend)]` (*`r SPI_trend_range$species[SPI_trend_range$trend == min(SPI_trend_range$trend)]`*)  
+Augmentation maximale de `r round(max(SPI_trend_range$trend)*100, digit = 0)`% pour `r SPI_trend_range$vernacular[SPI_trend_range$trend == max(SPI_trend_range$trend)]` (*`r SPI_trend_range$species[SPI_trend_range$trend == max(SPI_trend_range$trend)]`*)  
+Avec une moyenne de `r round(mean(SPI_trend_range$trend, na.rm = T)*100, digit = 0)`% (sd = `r round(sd(SPI_trend_range$trend)*100, digit = 0)` %) pour les `r nrow(SPI_trend_range)` espèces considérées  
 
 
 ```{r RANGES_SPI_species, echo=F, warnings=F}
@@ -121,10 +112,10 @@ fig <- fig %>% toWebGL()
 fig
 ```
 
-## **Etat de la protection des espèces du nord vs. du Sud**  
+## **Etat de la protection des espèces du nord vs. du Sud en 2023**  
   
-Les espèces du Nord présentent un SPI moyen de `r mean_SPI_NORTH`­­% (sd = `r sd_SPI_NORTH`­%).  
-Les espèces du Sud présentent un SPI moyen `r mean_SPI_SOUTH`­% (sd = `r sd_SPI_SOUTH`%).  
+Les espèces présentent exclusivement au Nord présentent un SPI moyen de `r round(mean(last_spi_N$SPI_NORTH, na.rm = T)*100, digit = 2)`­­% (sd = `r round(sd(last_spi_N$SPI_NORTH, na.rm = T)*100, digit = 2)`­%).  
+Les espèces présentent exclusivement au Sud présentent un SPI moyen `r round(mean(last_spi_S$SPI_SOUTH, na.rm = T)*100, digit = 2)`­% (sd = `r round(sd(last_spi_S$SPI_SOUTH, na.rm = T)*100, digit = 2)`%).  
 
 :::{.panel-tabset}
 
@@ -255,7 +246,22 @@ fig <- subplot(fig_N, fig_S)
 fig
 ```
 :::
-## **Etat de la protection des espèces par groupe taxonomique**  
+## **Etat de la protection des espèces par groupe taxonomique en 2023**  
+
+``` {r taxo_description, echo = FALSE, results = 'asis'}
+
+template <- "Les %s présentent un SPI moyen de %s (sd = %s, n = %s).  
+"
+
+for (i in seq(nrow(spi_taxo))) {
+  current <- spi_taxo[i, ]
+  cat(sprintf(template,
+                current$group_fr,
+                round(current$mean, digit = 2),
+                round(current$sd, digit = 2),
+                current$n))
+}
+```
 
 ```{r RANGES_SPI_2023_taxo, echo=F, warning = FALSE}
 #| label: fig-spi_2023_groupe_taxo
