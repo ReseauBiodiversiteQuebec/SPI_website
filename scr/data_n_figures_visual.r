@@ -57,6 +57,8 @@ aires_latlon$POPINFOS <- paste0(
 
 # SPI <- read.csv("./results/RANGES/SPI.csv")
 SPI <- read.csv("./results/SPI_ranges.csv")
+# Remove unknown species
+SPI <- SPI[SPI$SPECIES != "Information masquée", ]
 # error in species names
 SPI$SPECIES[SPI$SPECIES == "Lyn rufus"] <- "Lynx rufus"
 species <- as.character(unique(SPI$SPECIES))

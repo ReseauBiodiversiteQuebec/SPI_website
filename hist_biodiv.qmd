@@ -8,9 +8,11 @@ title: "Histoire de biodiversité"
 
 # Load data
 SPI_OCC <- read.csv("results/SPI_OCC.csv")
+SPI_OCC <- SPI_OCC[SPI_OCC$SPECIES != "Information masquée",]
 SPI_OCC_2023 <- SPI_OCC[SPI_OCC$YEAR == 2023,]
 
 SPI_RANGES <- read.csv("results/SPI_ranges.csv")
+SPI_RANGES <- SPI_RANGES[SPI_RANGES$SPECIES != "Information masquée",]
 SPI_RANGES_2023 <- SPI_RANGES[SPI_RANGES$YEAR == 2023,]
 
 ```
