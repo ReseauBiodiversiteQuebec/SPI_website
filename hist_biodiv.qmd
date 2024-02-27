@@ -30,7 +30,7 @@ Nous avons comparé ces résultats à ceux obtenus avec les occurrences du CDPNQ
 
 L'intérêt de cette comparaison est de voir si la protection des habitats où la présence d'une espèce est confirmée est comparable à la protection des habitats potentiels de l'espèce (aire de distribution). 
 
-Puisqu'il existe une disparité entre le sud et le nord du Québec dans la superficie protégée du territoire, nous avons aussi mesuré séparément la quantité d'habitat protégé pour le nord et sud.
+Puisqu'il existe une disparité entre le sud et le nord du Québec dans la superficie protégée du territoire, nous avons aussi mesuré séparément la quantité d'habitat protégé pour le nord et sud, suivant la division définie par le territoire du Plan Nord (49e parallèle).
 
 ### Messages clés
 
@@ -76,9 +76,10 @@ Visualisation des résultats dans l'[onglet](https://reseaubiodiversitequebec.gi
   - `r sum(SPI_OCC_2023$SPI_SOUTH >= 0.17, na.rm = T)` espèces (`r round(sum(SPI_OCC_2023$SPI_SOUTH >= 0.17, na.rm = T) / nrow(SPI_OCC_2023) * 100, digit = 2)`%) dans le sud
 
 ### Protection des espèces dans le Nord vs. dans le Sud
+- La définition du Nord et du Sud utilisée est celle du territoire du Plan Nord (49e parallèle), en conformité avec le registres des aires protégées du Québec (MELCCFP).
 - Les espèces du nord sont mieux protégées que celles du sud : 
-  - `r round(mean(SPI_RANGES_2023$SPI_NORTH, na.rm = T), digit = 2)`% (sd = `r round(sd(SPI_RANGES_2023$SPI_NORTH, na.rm = T), digit = 2)`%) de la superfice > 50e parallèle vs. `r round(mean(SPI_RANGES_2023$SPI_SOUTH, na.rm = T), digit = 2)`% (sd = `r round(sd(SPI_RANGES_2023$SPI_SOUTH, na.rm = T), digit = 2)`%) sous le 50e parallèle de la superficie des aires de distribution est protégée
-  - `r round(mean(SPI_OCC_2023$SPI_NORTH, na.rm = T), digit = 2)`% (sd = `r round(sd(SPI_OCC_2023$SPI_NORTH, na.rm = T), digit = 2)`%) de la superfice > 50e parallèle vs. `r round(mean(SPI_OCC_2023$SPI_SOUTH, na.rm = T), digit = 2)`% (sd = `r round(sd(SPI_OCC_2023$SPI_SOUTH, na.rm = T), digit = 2)`%) sous le 50e parallèle de la superficie des occurrences est protégée
+  - `r round(mean(SPI_RANGES_2023$SPI_NORTH, na.rm = T), digit = 2)`% (sd = `r round(sd(SPI_RANGES_2023$SPI_NORTH, na.rm = T), digit = 2)`%) de la superfice > 49e parallèle vs. `r round(mean(SPI_RANGES_2023$SPI_SOUTH, na.rm = T), digit = 2)`% (sd = `r round(sd(SPI_RANGES_2023$SPI_SOUTH, na.rm = T), digit = 2)`%) sous le 49e parallèle de la superficie des aires de distribution est protégée
+  - `r round(mean(SPI_OCC_2023$SPI_NORTH, na.rm = T), digit = 2)`% (sd = `r round(sd(SPI_OCC_2023$SPI_NORTH, na.rm = T), digit = 2)`%) de la superfice > 49e parallèle vs. `r round(mean(SPI_OCC_2023$SPI_SOUTH, na.rm = T), digit = 2)`% (sd = `r round(sd(SPI_OCC_2023$SPI_SOUTH, na.rm = T), digit = 2)`%) sous le 49e parallèle de la superficie des occurrences est protégée
 
 ### État de la protection des habitats des espèces regroupées par groupe taxonomique (Amphibien, Mammifère, Poisson, Reptile)
 
