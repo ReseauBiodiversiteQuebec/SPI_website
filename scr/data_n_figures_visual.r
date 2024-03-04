@@ -146,13 +146,19 @@ sspi_df$GROUPE[is.na(sspi_df$GROUPE)] <- "other"
 #### figure 2B - courbes de tendance de SPI à partir des occurrences ####
 # -------------------------------------------------------------------- #
 
-# SOCC <- read.csv("./results/RANGES/SPI_OCC.csv")
 SOCC <- read.csv("./results/SPI_OCC.csv")
 SOCC <- SOCC[!(SOCC$SPECIES == "Information masquée"), ]
 species <- as.character(unique(SOCC$SPECIES))
+spe <- stringr::str_split(species, " ")
+spec <- lapply(spe, function(x){
+    s <- paste(x[1], x[2])
+    s
+})
+speci <- unlist(spec)
+species2 <- unique(speci)
 years <- as.numeric(unique(SOCC$YEAR))
 
-# Recup des infos sur les sp dans Atlas --> inconplet majoritairement pour les espèces végégtales
+# Recup des infos sur les sp dans Atlas --> incomplet majoritairement pour les espèces végégtales
 # spe_ls <- stringr::str_split(species, " ")
 # spe2 <- lapply(spe_ls, function(x) {
 #     spe <- paste(x[1], x[2])
@@ -214,13 +220,17 @@ sspi_df_occ$GROUPE[is.na(sspi_df_occ$GROUPE)] <- "other"
 # ------------------------------------------------------------------------ #
 #### figure 3A - barchat SPI 2023 par groupe Nord vs Sud - aire distri ####
 # ------------------------------------------------------------------------ #
-# last_spi_NS <- read.csv2("./data_clean/RANGE_SPI_north_south.csv")[, -1]
+
 sspi_df_last <- SPI[SPI$YEAR == 2023, ]
 
-last_spi_N <- SPI[SPI$YEAR == 2023 & SPI$SPI_NORTH != 0 & SPI$SPI_SOUTH == 0, ]
-last_spi_S <- SPI[SPI$YEAR == 2023 & SPI$SPI_NORTH == 0 & SPI$SPI_SOUTH != 0, ]
+# last_spi_N2 <- SPI[SPI$YEAR == 2023 & SPI$SPI_NORTH != 0 & SPI$SPI_SOUTH == 0, ]
+last_spi_N <- SPI[SPI$YEAR == 2023 & is.na(SPI$SPI_SOUTH) & !is.na(SPI$SPI_NORTH), ]
+# last_spi_S2 <- SPI[SPI$YEAR == 2023 & SPI$SPI_NORTH == 0 & SPI$SPI_SOUTH != 0, ]
+last_spi_S <- SPI[SPI$YEAR == 2023 & is.na(SPI$SPI_NORTH) & !is.na(SPI$SPI_SOUTH), ]
 # --- #
-df <- SPI[SPI$YEAR == 2023 & SPI$SPI_NORTH != 0 & SPI$SPI_SOUTH != 0, ]
+# df2 <- SPI[SPI$YEAR == 2023 & SPI$SPI_NORTH != 0 & SPI$SPI_SOUTH != 0, ]
+df <- SPI[SPI$YEAR == 2023 & !is.na(SPI$SPI_NORTH) & !is.na(SPI$SPI_SOUTH), ]
+
 last_spi_NS <- data.frame(SPECIES = rep(df$SPECIES, 2),
                   vernacular_fr =  rep(df$vernacular_fr, 2),
                  SPI = c(df$SPI_NORTH, df$SPI_SOUTH),
@@ -234,16 +244,19 @@ last_spi_NS <- data.frame(SPECIES = rep(df$SPECIES, 2),
 head(SOCC)
 socc2023 <- SOCC[SOCC$YEAR == 2023, ]
 
-last_socc_N <- socc2023[socc2023$YEAR == 2023 & socc2023$SPI_NORTH != 0 & socc2023$SPI_SOUTH == 0, ]
-last_socc_S <- socc2023[socc2023$YEAR == 2023 & socc2023$SPI_NORTH == 0 & socc2023$SPI_SOUTH != 0, ]
+# last_socc_N <- socc2023[socc2023$YEAR == 2023 & socc2023$SPI_NORTH != 0 & socc2023$SPI_SOUTH == 0, ]
+last_socc_N <- socc2023[is.na(socc2023$SPI_SOUTH) & !is.na(socc2023$SPI_NORTH), ]
+# last_socc_S <- socc2023[socc2023$YEAR == 2023 & socc2023$SPI_NORTH == 0 & socc2023$SPI_SOUTH != 0, ]
+last_socc_S <- socc2023[is.na(socc2023$SPI_NORTH) & !is.na(socc2023$SPI_SOUTH), ]
 # --- #
-df2 <- socc2023[socc2023$YEAR == 2023 & socc2023$SPI_NORTH != 0 & socc2023$SPI_SOUTH != 0, ]
+df2 <- socc2023[!is.na(socc2023$SPI_NORTH) & !is.na(socc2023$SPI_SOUTH), ]
+
 last_socc_NS <- data.frame(SPECIES = rep(df2$SPECIES, 2),
                 #   vernacular_fr =  rep(df2$vernacular_fr, 2),
                  SPI = c(df2$SPI_NORTH, df2$SPI_SOUTH),
                  LOC = c(rep("Nord", dim(df2)[1]), rep("Sud", dim(df2)[1])))
 
-# WARNINGS !!!! SP manquantes ici ****
+
 # ---------------------------------------------------------- #
 #### figure 6 - barchat SPI 2023 par groupe taxonomique ####
 # -------------------------------------------------------- #

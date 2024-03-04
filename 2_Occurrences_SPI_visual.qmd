@@ -110,16 +110,16 @@ fig <- fig %>% toWebGL()
 fig
 ```
 
-## **Etat de la protection des espèces du nord vs. du Sud**  
-Les espèces du Nord présentent un SPI moyen de 69% (sd = 36%).  
-Les espèces du Sud présentent un SPI moyen 40% (sd = 34%).  
+## **Etat de la protection des occurrences d'espèce situées au nord vs. au Sud en 2023**  
+Les espèces dont les occurrences sont présentent exclusivement dans le Nord (n = `r dim(last_socc_N)[1]`) présentent un SPI moyen de `r round(mean(last_socc_N$SPI_NORTH)*100, digit = 2)`% (sd = `r round(sd(last_socc_N$SPI_NORTH)*100, digit = 2)`%).  
+Les espèces dont les occurrences sont présentent uniquement dans le Sud (n = `r dim(last_socc_S)[1]`) présentent un SPI moyen `r round(mean(last_socc_S$SPI_SOUTH)*100, digit=2)`% (sd = `r round(sd(last_socc_S$SPI_SOUTH)*100, digit = 2)`%).  
 
 :::{.panel-tabset}
 
 ## Nord
 ```{r OCC_SPI_2023_N, echo=F, warning = FALSE}
 #| label: fig-spi_2023_Nord
-#| fig-cap: "Valeur de l'indice de protection des espèces en 2023, à partir des données d'occurrences (n = 503), les espèce retrouvées dans le nord."
+#| fig-cap: "Valeur de l'indice de protection des espèces en 2023, à partir des données d'occurrences (n = 503), pour les occurrences d'espèce retrouvées exclusivement dans le nord."
 #| warning: false
 # conversion from species characters to ordered levels of factor for keeping increasing SPI
 last_socc_N$vernacular_fr <- last_socc_N$SPECIES
@@ -155,7 +155,7 @@ fig
 
 ```{r OCC_SPI_2023_S, echo=F, warning = FALSE}
 #| label: fig-spi_2023_Sud
-#| fig-cap: "Valeur de l'indice de protection des espèces en 2023, à partir des données d'occurrences (n = 503), les espèce retrouvées dans le sud."
+#| fig-cap: "Valeur de l'indice de protection des espèces en 2023, à partir des données d'occurrences (n = 503), dont les occurrences d'espèce sont retrouvées exclusivement dans le sud."
 #| warning: false
 # conversion from species characters to ordered levels of factor for keeping increasing SPI
 last_socc_S$vernacular_fr <- last_socc_S$SPECIES
@@ -190,7 +190,7 @@ fig
 ## Nord-Sud
 ```{r RANGES_SPI_2023_NS, echo=F, warning = FALSE}
 #| label: fig-spi_2023_NordSud
-#| fig-cap: "Valeur de l'indice de protection des espèces en 2023, à partir des données d'occurrences (n = 503), les espèce retrouvées dans le nord et le sud simultanément."
+#| fig-cap: "Valeur de l'indice de protection des espèces en 2023, à partir des données d'occurrences (n = 503), dont les occurrences d'espèce sont retrouvées dans le nord et le sud simultanément."
 #| warning: false
 
 # conversion from species characters to ordered levels of factor for keeping increasing SPI

@@ -7,13 +7,6 @@ title: "Visualisation"
 library(knitr)
 source("scr/data_n_figures_visual.r")
 
-# ----------------------------
-# --- last SPI - distribution
-# ----------------------------
-
-last_spi_occ <- sspi_df_occ[sspi_df_occ$YEAR == 2023, ]
-last_spi_occ$SPI2 <- round(last_spi_occ$SPI, digits = 3)
-
 # colors
 col_pal <- c("#440154FF", "#39568CFF", "#1F968BFF", "#73D055FF")
 ```
@@ -112,17 +105,17 @@ fig <- fig %>% toWebGL()
 fig
 ```
 
-## **Etat de la protection des espèces du nord vs. du Sud en 2023**  
+## **Etat de la protection de la portion nordique vs. du Sud des aires de distribution en 2023**  
   
-Les espèces présentent exclusivement au Nord présentent un SPI moyen de `r round(mean(last_spi_N$SPI_NORTH, na.rm = T)*100, digit = 2)`­­% (sd = `r round(sd(last_spi_N$SPI_NORTH, na.rm = T)*100, digit = 2)`­%).  
-Les espèces présentent exclusivement au Sud présentent un SPI moyen `r round(mean(last_spi_S$SPI_SOUTH, na.rm = T)*100, digit = 2)`­% (sd = `r round(sd(last_spi_S$SPI_SOUTH, na.rm = T)*100, digit = 2)`%).  
+Les espèces dont l'aire de distribution se trouve exclusivement au Nord (n = `r dim(last_spi_N)[1]`) présentent un SPI moyen de `r round(mean(last_spi_N$SPI_NORTH)*100, digit = 2)`­­% (sd = `r round(sd(last_spi_N$SPI_NORTH)*100, digit = 2)`­%).  
+Les espèces dont l'aire de distribution se trouve exclusivement au Sud (n = `r dim(last_spi_S)[1]`) présentent un SPI moyen `r round(mean(last_spi_S$SPI_SOUTH)*100, digit = 2)`­% (sd = `r round(sd(last_spi_S$SPI_SOUTH)*100, digit = 2)`%).  
 
 :::{.panel-tabset}
 
 ## Nord
 ```{r RANGES_SPI_2023_N, echo=F, warning = FALSE}
 #| label: fig-spi_2023_Nord
-#| fig-cap: "Valeur de l'indice de protection des espèces en 2023, à partir des données d'aires de distribution (n = 225) pour les espèces retrouuvées dans le Nord."
+#| fig-cap: "Valeur de l'indice de protection des espèces en 2023, à partir des données d'aires de distribution (n = 225) pour les espèces dont l'aire de distribution se trouve exclusivement dans le Nord."
 #| warning: false
 #| 
 # conversion from species characters to ordered levels of factor for keeping increasing SPI
@@ -157,7 +150,7 @@ fig
 
 ```{r RANGES_SPI_2023_S, echo=F, warning = FALSE}
 #| label: fig-spi_2023_Sud
-#| fig-cap: "Valeur de l'indice de protection des espèces en 2023, à partir des données d'aires de distribution (n = 225) pour les espèces retrouuvées dans le Sud."
+#| fig-cap: "Valeur de l'indice de protection des espèces en 2023, à partir des données d'aires de distribution (n = 225) pour les espèces dont l'aire de distribution se situe exclusivement dans le Sud."
 #| warning: false
 #| 
 # conversion from species characters to ordered levels of factor for keeping increasing SPI
@@ -191,7 +184,7 @@ fig
 ## Nord-Sud
 ```{r RANGES_SPI_2023_NS, echo=F, warning = FALSE}
 #| label: fig-spi_2023_NordSud
-#| fig-cap: "Valeur de l'indice de protection des espèces en 2023, à partir des données d'aires de distribution (n = 225) pour les espèces retrouuvées dans le Nord et le Sud."
+#| fig-cap: "Valeur de l'indice de protection des espèces en 2023, à partir des données d'aires de distribution (n = 225) pour les espèces dont l'aire de distribution chevauche la limite Nord-Sud."
 #| warning: false
 
 # conversion from species characters to ordered levels of factor for keeping increasing SPI
