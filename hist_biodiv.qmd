@@ -34,15 +34,16 @@ Puisqu'il existe une disparité entre le sud et le nord du Québec dans la super
 
 ### Messages clés
 
-- Augmentation de la protection pour tous les groupes d'espèces
-- Distribution des aires protégées : plus d'aires dans le nord et certaines créations d'aires ont marqué de grandes augmentations dans la couverture du territoire
-- La portion nordique de la distribution des espèces est mieux protégée que la portion du sud
-- Certaines espèces sont mieux protégées que d'autres
+- En général, aacélération de la protection des espèces au cours des dernières décennies
+- Le territoire nordique du Québec est plus protégé que le territoire sous le 49ème parallèle où se concentre la biodiversité
+- Sur le territoire nordique du Québec, les espèces sont mieux protégées que sur le territoire en dessous du 49ème parallèle
+- Globalement, la protection des espèces présente une grande variabilité (cf exemples ?)
+- Analyse globale de la part de BQ, d'autres équipes, telle que la Division du Rétablissement de la Direction des Espèces Fauniques Menacées et Vulnérables du MELCCFP, produisent des analyses plus précises pour les espèces vulnérables et menacées
 - Biodiversité Québec est au centre de la communication et du suivi de la biodiversité du Québec
 
 
 ### Aires protégées du Québec
-- Carte (figure 1) de représentation des aires protégées du Québec (la carte n'est pas à jour avec les chiffres qui suivent, toujours en attente de la mise à jour du MELCCFP)
+- [Carte](https://reseaubiodiversitequebec.github.io/SPI_website/indic_protec_esp.html#repr%C3%A9sentation-actuelle-des-aires-prot%C3%A9g%C3%A9es-du-qu%C3%A9bec) de représentation des aires protégées du Québec (la carte n'est pas à jour avec les chiffres qui suivent, toujours en attente de la mise à jour du MELCCFP)
 - Au 30 septembre 2023, le réseau d’aires protégées de l’ensemble du Québec s’étend sur 274 374 km2 ou 16,42% du territoire
   - Milieu continental (terrestre et eaux douces) : 255 381 km2 ou 16,89%
   - Milieu marin et côtier : 18 992 km2 ou 12,21%
@@ -59,8 +60,8 @@ Visualisation des résultats dans l'[onglet](https://reseaubiodiversitequebec.gi
 - Augmentation de la protection pour tous les groupes d'espèces
 - En moyenne, `r round(mean(SPI_RANGES_2023$SPI, na.rm = T), digit = 2)`% de la superficie des aires de distribution se trouvent dans des aires protégées. C'est en deçà de l'objectif de 17% de protection du territoire.
 - Nombre d'espèces protégées à 17% : `r sum(SPI_RANGES_2023$SPI >= 0.17, na.rm = T)` espèces (`r round(sum(SPI_RANGES_2023$SPI >= 0.17, na.rm = T) / nrow(SPI_RANGES_2023) * 100, digit = 2)`%)
-  - `r sum(SPI_RANGES_2023$SPI_NORTH >= 0.17, na.rm = T)` espèces (`r round(sum(SPI_RANGES_2023$SPI_NORTH >= 0.17, na.rm = T) / nrow(SPI_RANGES_2023) * 100, digit = 2)`%) dans le nord
-  - `r sum(SPI_RANGES_2023$SPI_SOUTH >= 0.17, na.rm = T)` espèces (`r round(sum(SPI_RANGES_2023$SPI_SOUTH >= 0.17, na.rm = T) / nrow(SPI_RANGES_2023) * 100, digit = 2)`%) dans le sud
+- `r sum(SPI_RANGES_2023$SPI_NORTH >= 0.17, na.rm = T)` espèces (`r round(sum(SPI_RANGES_2023$SPI_NORTH >= 0.17, na.rm = T) / nrow(SPI_RANGES_2023) * 100, digit = 2)`%) dans le nord
+- `r sum(SPI_RANGES_2023$SPI_SOUTH >= 0.17, na.rm = T)` espèces (`r round(sum(SPI_RANGES_2023$SPI_SOUTH >= 0.17, na.rm = T) / nrow(SPI_RANGES_2023) * 100, digit = 2)`%) dans le sud
 
 **Occurrences**
 
@@ -72,18 +73,14 @@ Visualisation des résultats dans l'[onglet](https://reseaubiodiversitequebec.gi
   - Les espèces en situation précaire sont plus souvent observées dans des aires protégées
   - Réalité : un peu des deux
 - Nombre d'espèces protégées à 17% : `r sum(SPI_OCC_2023$SPI >= 0.17, na.rm = T)` espèces (`r round(sum(SPI_OCC_2023$SPI >= 0.17, na.rm = T) / nrow(SPI_OCC_2023) * 100, digit = 2)`%)
-  - `r sum(SPI_OCC_2023$SPI_NORTH >= 0.17, na.rm = T)` espèces (`r round(sum(SPI_OCC_2023$SPI_NORTH >= 0.17, na.rm = T) / nrow(SPI_OCC_2023) * 100, digit = 2)`%) dans le nord
-  - `r sum(SPI_OCC_2023$SPI_SOUTH >= 0.17, na.rm = T)` espèces (`r round(sum(SPI_OCC_2023$SPI_SOUTH >= 0.17, na.rm = T) / nrow(SPI_OCC_2023) * 100, digit = 2)`%) dans le sud
+- `r sum(SPI_OCC_2023$SPI_NORTH >= 0.17, na.rm = T)` espèces (`r round(sum(SPI_OCC_2023$SPI_NORTH >= 0.17, na.rm = T) / nrow(SPI_OCC_2023) * 100, digit = 2)`%) dans le nord
+- `r sum(SPI_OCC_2023$SPI_SOUTH >= 0.17, na.rm = T)` espèces (`r round(sum(SPI_OCC_2023$SPI_SOUTH >= 0.17, na.rm = T) / nrow(SPI_OCC_2023) * 100, digit = 2)`%) dans le sud
 
 ### Protection des espèces dans le Nord vs. dans le Sud
 - La définition du Nord et du Sud utilisée est celle du territoire du Plan Nord (49e parallèle), en conformité avec le registres des aires protégées du Québec (MELCCFP).
-- Les espèces du nord sont mieux protégées que celles du sud : 
-  - `r round(mean(SPI_RANGES_2023$SPI_NORTH, na.rm = T), digit = 2)`% (sd = `r round(sd(SPI_RANGES_2023$SPI_NORTH, na.rm = T), digit = 2)`%) de la superfice > 49e parallèle vs. `r round(mean(SPI_RANGES_2023$SPI_SOUTH, na.rm = T), digit = 2)`% (sd = `r round(sd(SPI_RANGES_2023$SPI_SOUTH, na.rm = T), digit = 2)`%) sous le 49e parallèle de la superficie des aires de distribution est protégée
-  - `r round(mean(SPI_OCC_2023$SPI_NORTH, na.rm = T), digit = 2)`% (sd = `r round(sd(SPI_OCC_2023$SPI_NORTH, na.rm = T), digit = 2)`%) de la superfice > 49e parallèle vs. `r round(mean(SPI_OCC_2023$SPI_SOUTH, na.rm = T), digit = 2)`% (sd = `r round(sd(SPI_OCC_2023$SPI_SOUTH, na.rm = T), digit = 2)`%) sous le 49e parallèle de la superficie des occurrences est protégée
-
-### État de la protection des habitats des espèces regroupées par groupe taxonomique (Amphibien, Mammifère, Poisson, Reptile)
-
-### Identification de cas extrême
+- La distribution nordique des espèces est mieux protégée que celle du sud : 
+  - `r round(mean(SPI_RANGES_2023$SPI_NORTH, na.rm = T)*100, digit = 2)`% (sd = `r round(sd(SPI_RANGES_2023$SPI_NORTH, na.rm = T)*100, digit = 2)`) de la superfice > 49e parallèle vs. `r round(mean(SPI_RANGES_2023$SPI_SOUTH, na.rm = T)*100, digit = 2)`% (sd = `r round(sd(SPI_RANGES_2023$SPI_SOUTH, na.rm = T)*100, digit = 2)`) sous le 49e parallèle de la superficie des aires de distribution est protégée
+  - `r round(mean(SPI_OCC_2023$SPI_NORTH, na.rm = T)*100, digit = 2)`% (sd = `r round(sd(SPI_OCC_2023$SPI_NORTH, na.rm = T)*100, digit = 2)`) de la superfice > 49e parallèle vs. `r round(mean(SPI_OCC_2023$SPI_SOUTH, na.rm = T)*100, digit = 2)`% (sd = `r round(sd(SPI_OCC_2023$SPI_SOUTH, na.rm = T)*100, digit = 2)`) sous le 49e parallèle de la superficie des occurrences est protégée
 
 ### Méthodologie
 
