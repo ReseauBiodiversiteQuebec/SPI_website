@@ -58,7 +58,7 @@ Puisqu'il existe une disparité entre le sud et le nord du Québec dans la super
 Visualisation des résultats dans l'[onglet](https://reseaubiodiversitequebec.github.io/SPI_website/2_Ranges_SPI_visual.html) dédié au projet.
 
 - Augmentation de la protection pour tous les groupes d'espèces
-- En moyenne, `r round(mean(SPI_RANGES_2023$SPI, na.rm = T), digit = 2)`% de la superficie des aires de distribution se trouvent dans des aires protégées. C'est en deçà de l'objectif de 17% de protection du territoire.
+- En moyenne, `r round(mean(SPI_RANGES_2023$SPI, na.rm = T)*100, digit = 2)`% de la superficie des aires de distribution se trouvent dans des aires protégées. C'est en deçà de l'objectif de 17% de protection du territoire.
 - Nombre d'espèces protégées à 17% : `r sum(SPI_RANGES_2023$SPI >= 0.17, na.rm = T)` espèces (`r round(sum(SPI_RANGES_2023$SPI >= 0.17, na.rm = T) / nrow(SPI_RANGES_2023) * 100, digit = 2)`%)
 - `r sum(SPI_RANGES_2023$SPI_NORTH >= 0.17, na.rm = T)` espèces (`r round(sum(SPI_RANGES_2023$SPI_NORTH >= 0.17, na.rm = T) / nrow(SPI_RANGES_2023) * 100, digit = 2)`%) dans le nord
 - `r sum(SPI_RANGES_2023$SPI_SOUTH >= 0.17, na.rm = T)` espèces (`r round(sum(SPI_RANGES_2023$SPI_SOUTH >= 0.17, na.rm = T) / nrow(SPI_RANGES_2023) * 100, digit = 2)`%) dans le sud
@@ -67,7 +67,7 @@ Visualisation des résultats dans l'[onglet](https://reseaubiodiversitequebec.gi
 
 Visualisation des résultats dans l'[onglet](https://reseaubiodiversitequebec.github.io/SPI_website/2_Occurrences_SPI_visual.html) dédié au projet.
 
-- En moyenne, `r round(mean(SPI_OCC_2023$SPI, na.rm = T), digit = 2)`% de la superficie des occurrences d'une espèce se trouve dans des aires protégées
+- En moyenne, `r round(mean(SPI_OCC_2023$SPI, na.rm = T)*100, digit = 2)`% de la superficie des occurrences d'une espèce se trouve dans des aires protégées
 - Interprétations possibles : 
   - Les aires protégées protègent davantage les habitats utilisés par les espèces en situation précaire
   - Les espèces en situation précaire sont plus souvent observées dans des aires protégées
