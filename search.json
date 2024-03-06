@@ -1,0 +1,437 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site",
+    "crumbs": [
+      "À propos",
+      "About"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Indicateurs de biodiversité",
+    "section": "",
+    "text": "Ceci est une page pour les généralités autour des travaux présentés ici.",
+    "crumbs": [
+      "Home",
+      "Indicateurs de biodiversité"
+    ]
+  },
+  {
+    "objectID": "1_Ranges_SPI_explo.html",
+    "href": "1_Ranges_SPI_explo.html",
+    "title": "Exploration",
+    "section": "",
+    "text": "Augmentation générale de la protection des aires de distribution des espèces : aujourd’hui ~12% des aires de distribution sont protégées.\nCertaines espèces sont très bien protégées et d’autres beaucoup moins. Les reptiles s’illustrent, en moyenne, comme les espèces les moins protégées alors que les mammifères sont, en moyenne, les mieux protégés.\nAlors qu’on note une augmentation générale de la protection des aires de distribution des espèces, la tendance suit de près celle du territoire protégé au Québec.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Aires de distribution",
+      "Exploration"
+    ]
+  },
+  {
+    "objectID": "1_Ranges_SPI_explo.html#spi-par-groupe",
+    "href": "1_Ranges_SPI_explo.html#spi-par-groupe",
+    "title": "Exploration",
+    "section": "",
+    "text": "Augmentation générale de la protection des aires de distribution des espèces : aujourd’hui ~12% des aires de distribution sont protégées.\nCertaines espèces sont très bien protégées et d’autres beaucoup moins. Les reptiles s’illustrent, en moyenne, comme les espèces les moins protégées alors que les mammifères sont, en moyenne, les mieux protégés.\nAlors qu’on note une augmentation générale de la protection des aires de distribution des espèces, la tendance suit de près celle du territoire protégé au Québec.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Aires de distribution",
+      "Exploration"
+    ]
+  },
+  {
+    "objectID": "1_Ranges_SPI_explo.html#scores-spi",
+    "href": "1_Ranges_SPI_explo.html#scores-spi",
+    "title": "Exploration",
+    "section": "Scores SPI",
+    "text": "Scores SPI\n\nOn note un déplacement de la distribution des scores SPI vers la droite, ce qui indique une augmentation de la protection des aires de distribution des espèces. Aussi, la distribution des scores SPI est plus étalée, ce qui indique une augmentation de la variabilité de la protection des aires de distribution des espèces.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Aires de distribution",
+      "Exploration"
+    ]
+  },
+  {
+    "objectID": "1_Ranges_SPI_explo.html#scores-spi-par-régions",
+    "href": "1_Ranges_SPI_explo.html#scores-spi-par-régions",
+    "title": "Exploration",
+    "section": "Scores SPI par régions",
+    "text": "Scores SPI par régions\n\nLa protection de la distribution des espèces au nord du Québec présente plus de variabilité que celle au sud. Certaines espèces sont mieux protégées que dans le sud, mais les moyennes sont similaires.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Aires de distribution",
+      "Exploration"
+    ]
+  },
+  {
+    "objectID": "1_Occurrences_SPI_explo.html",
+    "href": "1_Occurrences_SPI_explo.html",
+    "title": "Exploration",
+    "section": "",
+    "text": "La protection des occurences est suppérieure à celle des aires de distribution. Les habitats où la présence d’une espèce à statut est constatée sont mieux protégés. Pour ainsi dire, les efforts de protection du territoire se concentrent et représentent mieux les habitats où les espèces sont observés.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Occurrences",
+      "Exploration"
+    ]
+  },
+  {
+    "objectID": "1_Occurrences_SPI_explo.html#spi-par-groupe",
+    "href": "1_Occurrences_SPI_explo.html#spi-par-groupe",
+    "title": "Exploration",
+    "section": "",
+    "text": "La protection des occurences est suppérieure à celle des aires de distribution. Les habitats où la présence d’une espèce à statut est constatée sont mieux protégés. Pour ainsi dire, les efforts de protection du territoire se concentrent et représentent mieux les habitats où les espèces sont observés.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Occurrences",
+      "Exploration"
+    ]
+  },
+  {
+    "objectID": "1_Occurrences_SPI_explo.html#spi-par-nombre-doccurences",
+    "href": "1_Occurrences_SPI_explo.html#spi-par-nombre-doccurences",
+    "title": "Exploration",
+    "section": "SPI par nombre d’occurences",
+    "text": "SPI par nombre d’occurences\n\nBeaucoup de variance dans la protection des occurences. Certaines espèces sont entièrement protégées et d’autres très peu. Cela peut être en lien avec le nombre d’occurences.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Occurrences",
+      "Exploration"
+    ]
+  },
+  {
+    "objectID": "1_Occurrences_SPI_explo.html#scores-spi",
+    "href": "1_Occurrences_SPI_explo.html#scores-spi",
+    "title": "Exploration",
+    "section": "Scores SPI",
+    "text": "Scores SPI",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Occurrences",
+      "Exploration"
+    ]
+  },
+  {
+    "objectID": "1_Occurrences_SPI_explo.html#scores-spi-par-régions",
+    "href": "1_Occurrences_SPI_explo.html#scores-spi-par-régions",
+    "title": "Exploration",
+    "section": "Scores SPI par régions",
+    "text": "Scores SPI par régions",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Occurrences",
+      "Exploration"
+    ]
+  },
+  {
+    "objectID": "0_Bellavance_methodo.html",
+    "href": "0_Bellavance_methodo.html",
+    "title": "Méthodologie",
+    "section": "",
+    "text": "L’indicateur de biodiversité SPI mesure l’habitat des espèces protégées. Il est calculé comme le ratio de la superficie de l’habitat des espèces protégées à la superficie totale de l’habitat des espèces.\nLa protection des espèces est estimée avec les aires de répartition et les aires protégées inscrites au registre du Québec. Le score provient de superposition des aires de répartition et des aires protégées de façon à extraire une proportion des aires de répartition qui se retrouvent dans une aire protégée. Le code source utilisé pour le calcul du SPI est accessible sur GitHub.\n\n\nLes calculs sont détaillés et les scripts présentés sur la page du répertoire GitHub.\nL’habitat protégé est calculé par espèce et par année en faisant l’intersection entre les aires de répartition et les aires protégées. ```\n\n\n\nLes résultats par espèce sont enregistrés dans le fichier results/SPI.csv du répertoire GitHub.\n\n\n\nEn tant que preuve initiale de concept, l’indicateur est calculé pour la période 1992-2017 à partir de cartes de répartition complètes. Ces cartes ont été produites à l’aide de modèles INLA par Vencent Bellavance à partir de données de présences et d’absences provenant de Biodiversité Québec. Les cartes de répartition sont disponibles dans le dossier data, où chaque fichier .tif est nommé d’après une espèce et contient 26 couches, une pour chaque année entre 1992 et 2017.\nLes aires protégées proviennent du portail données ouvertes du gouvernement du Québec et sont également disponibles dans le dossier data. Seule la couche ‘Aires protégées du registre’ a été utilisée, et aucune distinction n’est faite entre les différents types d’aires protégées. Le jeu de données a été téléchargé le 31-08-2023.\n\n\nLe jeu de données sur les aires protégées contient plusieurs types d’aires protégées qui peuvent se chevaucher. Le chevauchement pourrait dupliquer la zone protégée et biaiser le calcul du SPI. Pour supprimer le chevauchement entre les différentes aires protégées, la fonction geos_unary_union du package geos a été utilisée pour faire l’union des polygones qui se chevauchent. La couche résultante est disponible dans le dossier data sous le nom aires_union.gpkg.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "SDM - INLA",
+      "Méthodologie"
+    ]
+  },
+  {
+    "objectID": "0_Bellavance_methodo.html#exécution-des-calculs",
+    "href": "0_Bellavance_methodo.html#exécution-des-calculs",
+    "title": "Méthodologie",
+    "section": "",
+    "text": "Les calculs sont détaillés et les scripts présentés sur la page du répertoire GitHub.\nL’habitat protégé est calculé par espèce et par année en faisant l’intersection entre les aires de répartition et les aires protégées. ```",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "SDM - INLA",
+      "Méthodologie"
+    ]
+  },
+  {
+    "objectID": "0_Bellavance_methodo.html#accès-aux-résultats",
+    "href": "0_Bellavance_methodo.html#accès-aux-résultats",
+    "title": "Méthodologie",
+    "section": "",
+    "text": "Les résultats par espèce sont enregistrés dans le fichier results/SPI.csv du répertoire GitHub.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "SDM - INLA",
+      "Méthodologie"
+    ]
+  },
+  {
+    "objectID": "0_Bellavance_methodo.html#données",
+    "href": "0_Bellavance_methodo.html#données",
+    "title": "Méthodologie",
+    "section": "",
+    "text": "En tant que preuve initiale de concept, l’indicateur est calculé pour la période 1992-2017 à partir de cartes de répartition complètes. Ces cartes ont été produites à l’aide de modèles INLA par Vencent Bellavance à partir de données de présences et d’absences provenant de Biodiversité Québec. Les cartes de répartition sont disponibles dans le dossier data, où chaque fichier .tif est nommé d’après une espèce et contient 26 couches, une pour chaque année entre 1992 et 2017.\nLes aires protégées proviennent du portail données ouvertes du gouvernement du Québec et sont également disponibles dans le dossier data. Seule la couche ‘Aires protégées du registre’ a été utilisée, et aucune distinction n’est faite entre les différents types d’aires protégées. Le jeu de données a été téléchargé le 31-08-2023.\n\n\nLe jeu de données sur les aires protégées contient plusieurs types d’aires protégées qui peuvent se chevaucher. Le chevauchement pourrait dupliquer la zone protégée et biaiser le calcul du SPI. Pour supprimer le chevauchement entre les différentes aires protégées, la fonction geos_unary_union du package geos a été utilisée pour faire l’union des polygones qui se chevauchent. La couche résultante est disponible dans le dossier data sous le nom aires_union.gpkg.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "SDM - INLA",
+      "Méthodologie"
+    ]
+  },
+  {
+    "objectID": "hist_biodiv.html",
+    "href": "hist_biodiv.html",
+    "title": "Histoire de biodiversité",
+    "section": "",
+    "text": "Le Québec a annoncé le 31 décembre 2020 avoir atteint son objectif de protection de 17% du territoire (registre des aires protégées du Québec). Mais la biodiversité est-elle représentée par ces aires protégées ?\nPour explorer cette question, nous avons mesuré la proportion de l’aire de répartition de plusieurs espèces (Amphibiens, Mammifères, Poissons, Reptiles) qui se trouve protégée par des aires protégées inscrites au registre du Québec. Ces aires de répartition informent sur la présence de l’espèce au Québec et la proportion de ces aires qui sont protégées nous informe sur la représentativité de la biodiversité dans les aires protégées.\nNous avons comparé ces résultats à ceux obtenus avec les occurrences du CDPNQ. Ces dernières se concentrent sur les espèces en situation précaire et sont construites à partir d’une ou de plusieurs observations. L’occurrence est définie par une zone tampon établie autour des observations, caractérisant ainsi l’habitat utilisé par une population locale.\nL’intérêt de cette comparaison est de voir si la protection des habitats où la présence d’une espèce est confirmée est comparable à la protection des habitats potentiels de l’espèce (aire de distribution).\nPuisqu’il existe une disparité entre le sud et le nord du Québec dans la superficie protégée du territoire, nous avons aussi mesuré séparément la quantité d’habitat protégé pour le nord et sud, suivant la division définie par le territoire du Plan Nord (49e parallèle).\n\n\n\n\nEn général, aacélération de la protection des espèces au cours des dernières décennies\nLe territoire nordique du Québec est plus protégé que le territoire sous le 49ème parallèle où se concentre la biodiversité\nSur le territoire nordique du Québec, les espèces sont mieux protégées que sur le territoire en dessous du 49ème parallèle\nGlobalement, la protection des espèces présente une grande variabilité (cf exemples ?)\nAnalyse globale de la part de BQ, d’autres équipes, telle que la Division du Rétablissement de la Direction des Espèces Fauniques Menacées et Vulnérables du MELCCFP, produisent des analyses plus précises pour les espèces vulnérables et menacées\nBiodiversité Québec est au centre de la communication et du suivi de la biodiversité du Québec\n\n\n\n\n\nCarte de représentation des aires protégées du Québec (la carte n’est pas à jour avec les chiffres qui suivent, toujours en attente de la mise à jour du MELCCFP)\nAu 30 septembre 2023, le réseau d’aires protégées de l’ensemble du Québec s’étend sur 274 374 km2 ou 16,42% du territoire\n\nMilieu continental (terrestre et eaux douces) : 255 381 km2 ou 16,89%\nMilieu marin et côtier : 18 992 km2 ou 12,21%\nLe territoire du Plan Nord (Au delà du 49e parallèle) est protégé sur 19,17% de sa superficie\n\nImportante accélération de la protection du territoire depuis le début des années 2000\nDistribution des aires protégées : plus d’aires dans le nord et certaines créations d’aires ont marqué de grandes augmentations dans la couverture du territoire\n\n\n\n\nAires de distribution\nVisualisation des résultats dans l’onglet dédié au projet.\n\nAugmentation de la protection pour tous les groupes d’espèces\nEn moyenne, 11.24% de la superficie des aires de distribution se trouvent dans des aires protégées. C’est en deçà de l’objectif de 17% de protection du territoire.\nNombre d’espèces protégées à 17% : 21 espèces (9.33%)\n86 espèces (38.22%) dans le nord\n8 espèces (3.56%) dans le sud\n\nOccurrences\nVisualisation des résultats dans l’onglet dédié au projet.\n\nEn moyenne, 34.93% de la superficie des occurrences d’une espèce se trouve dans des aires protégées\nInterprétations possibles :\n\nLes aires protégées protègent davantage les habitats utilisés par les espèces en situation précaire\nLes espèces en situation précaire sont plus souvent observées dans des aires protégées\nRéalité : un peu des deux\n\nNombre d’espèces protégées à 17% : 285 espèces (56.66%)\n79 espèces (15.71%) dans le nord\n234 espèces (46.52%) dans le sud\n\n\n\n\n\nLa définition du Nord et du Sud utilisée est celle du territoire du Plan Nord (49e parallèle), en conformité avec le registres des aires protégées du Québec (MELCCFP).\nLa distribution nordique des espèces est mieux protégée que celle du sud :\n\n16.56% (sd = 8.1) de la superfice &gt; 49e parallèle vs. 8.26% (sd = 3.83) sous le 49e parallèle de la superficie des aires de distribution est protégée\n41.93% (sd = 43.45) de la superfice &gt; 49e parallèle vs. 33.33% (sd = 34.37) sous le 49e parallèle de la superficie des occurrences est protégée\n\n\n\n\n\nLa méthodologie est présentée dans l’onglet Indice de Protection des Espèces du site web dédié au projet.\nLa méthodologie utilisée pour le calcul est basée sur la méthode de l’Indice de Protection des Espèces tel que présenté par GEO BON (SPI).",
+    "crumbs": [
+      "Histoire de biodiversité"
+    ]
+  },
+  {
+    "objectID": "hist_biodiv.html#points-clefs",
+    "href": "hist_biodiv.html#points-clefs",
+    "title": "Histoire de biodiversité",
+    "section": "",
+    "text": "Le Québec a annoncé le 31 décembre 2020 avoir atteint son objectif de protection de 17% du territoire (registre des aires protégées du Québec). Mais la biodiversité est-elle représentée par ces aires protégées ?\nPour explorer cette question, nous avons mesuré la proportion de l’aire de répartition de plusieurs espèces (Amphibiens, Mammifères, Poissons, Reptiles) qui se trouve protégée par des aires protégées inscrites au registre du Québec. Ces aires de répartition informent sur la présence de l’espèce au Québec et la proportion de ces aires qui sont protégées nous informe sur la représentativité de la biodiversité dans les aires protégées.\nNous avons comparé ces résultats à ceux obtenus avec les occurrences du CDPNQ. Ces dernières se concentrent sur les espèces en situation précaire et sont construites à partir d’une ou de plusieurs observations. L’occurrence est définie par une zone tampon établie autour des observations, caractérisant ainsi l’habitat utilisé par une population locale.\nL’intérêt de cette comparaison est de voir si la protection des habitats où la présence d’une espèce est confirmée est comparable à la protection des habitats potentiels de l’espèce (aire de distribution).\nPuisqu’il existe une disparité entre le sud et le nord du Québec dans la superficie protégée du territoire, nous avons aussi mesuré séparément la quantité d’habitat protégé pour le nord et sud, suivant la division définie par le territoire du Plan Nord (49e parallèle).\n\n\n\n\nEn général, aacélération de la protection des espèces au cours des dernières décennies\nLe territoire nordique du Québec est plus protégé que le territoire sous le 49ème parallèle où se concentre la biodiversité\nSur le territoire nordique du Québec, les espèces sont mieux protégées que sur le territoire en dessous du 49ème parallèle\nGlobalement, la protection des espèces présente une grande variabilité (cf exemples ?)\nAnalyse globale de la part de BQ, d’autres équipes, telle que la Division du Rétablissement de la Direction des Espèces Fauniques Menacées et Vulnérables du MELCCFP, produisent des analyses plus précises pour les espèces vulnérables et menacées\nBiodiversité Québec est au centre de la communication et du suivi de la biodiversité du Québec\n\n\n\n\n\nCarte de représentation des aires protégées du Québec (la carte n’est pas à jour avec les chiffres qui suivent, toujours en attente de la mise à jour du MELCCFP)\nAu 30 septembre 2023, le réseau d’aires protégées de l’ensemble du Québec s’étend sur 274 374 km2 ou 16,42% du territoire\n\nMilieu continental (terrestre et eaux douces) : 255 381 km2 ou 16,89%\nMilieu marin et côtier : 18 992 km2 ou 12,21%\nLe territoire du Plan Nord (Au delà du 49e parallèle) est protégé sur 19,17% de sa superficie\n\nImportante accélération de la protection du territoire depuis le début des années 2000\nDistribution des aires protégées : plus d’aires dans le nord et certaines créations d’aires ont marqué de grandes augmentations dans la couverture du territoire\n\n\n\n\nAires de distribution\nVisualisation des résultats dans l’onglet dédié au projet.\n\nAugmentation de la protection pour tous les groupes d’espèces\nEn moyenne, 11.24% de la superficie des aires de distribution se trouvent dans des aires protégées. C’est en deçà de l’objectif de 17% de protection du territoire.\nNombre d’espèces protégées à 17% : 21 espèces (9.33%)\n86 espèces (38.22%) dans le nord\n8 espèces (3.56%) dans le sud\n\nOccurrences\nVisualisation des résultats dans l’onglet dédié au projet.\n\nEn moyenne, 34.93% de la superficie des occurrences d’une espèce se trouve dans des aires protégées\nInterprétations possibles :\n\nLes aires protégées protègent davantage les habitats utilisés par les espèces en situation précaire\nLes espèces en situation précaire sont plus souvent observées dans des aires protégées\nRéalité : un peu des deux\n\nNombre d’espèces protégées à 17% : 285 espèces (56.66%)\n79 espèces (15.71%) dans le nord\n234 espèces (46.52%) dans le sud\n\n\n\n\n\nLa définition du Nord et du Sud utilisée est celle du territoire du Plan Nord (49e parallèle), en conformité avec le registres des aires protégées du Québec (MELCCFP).\nLa distribution nordique des espèces est mieux protégée que celle du sud :\n\n16.56% (sd = 8.1) de la superfice &gt; 49e parallèle vs. 8.26% (sd = 3.83) sous le 49e parallèle de la superficie des aires de distribution est protégée\n41.93% (sd = 43.45) de la superfice &gt; 49e parallèle vs. 33.33% (sd = 34.37) sous le 49e parallèle de la superficie des occurrences est protégée\n\n\n\n\n\nLa méthodologie est présentée dans l’onglet Indice de Protection des Espèces du site web dédié au projet.\nLa méthodologie utilisée pour le calcul est basée sur la méthode de l’Indice de Protection des Espèces tel que présenté par GEO BON (SPI).",
+    "crumbs": [
+      "Histoire de biodiversité"
+    ]
+  },
+  {
+    "objectID": "0_Ranges_methodo.html",
+    "href": "0_Ranges_methodo.html",
+    "title": "Méthodologie",
+    "section": "",
+    "text": "L’indicateur de biodiversité SPI mesure l’habitat des espèces protégées. Il est calculé comme le ratio de la superficie de l’habitat des espèces protégées à la superficie totale de l’habitat des espèces.\nLa protection des espèces est estimée avec les habitats où elles peuvent être retrouvées (aires de répartition du MELCCFP) et les aires protégées inscrites au registre du Québec. Le score provient de superposition des aires de répartition et des aires protégées de façon à extraire une proportion des aires de distribution qui se retrouvent dans une aire protégée. Les aires de répartition comprennent la région géographique et ses habitats où l’espèce est estimée être présente. Le code source utilisé pour le calcul du SPI est accessible sur GitHub.\n\n\nLes calculs sont détaillés et les scripts présentés sur la page du répertoire GitHub.\nL’habitat protégé est calculé par espèce et par année en faisant l’intersection entre les occurrences et les aires protégées. De plus, l’analyse est effectuée pour l’ensemble du Québec et pour les régions sous (sud) et au dessus (nord du Québec) du 50e parallèle.\nspi &lt;- function(range_maps, aires_prot){    \n    intersect &lt;- suppressWarnings(sf::st_intersection(range_maps, aires_prot))\n    SPA &lt;- sf::st_area(intersect) |&gt; as.numeric() |&gt; suppressWarnings() |&gt; sum()\n    \n    if (length(SPA) == 0) return(0)\n\n    SPI &lt;- SPA / sum(as.numeric(sf::st_area(range_maps)))\n    \n    return(SPI)\n}\n\n\n\nLes résultats par espèce sont enregistrés dans le fichier results/SPI_ranges.csv du répertoire GitHub.\n\n\n\n\n\nLes cartes de répartition ont été obtenues depuis le portail web donneesquebec et ont été téléchargées le 13 novembre 2023. Ces cartes de répartition ont été produites par le MELCCFP et ont été mises à jour pour la dernière fois le 11 septembre 2023. Elles sont disponibles dans le dossier data_raw, où chaque fichier .gpkg est nommé d’après un groupe d’espèces. On y retrouve les amphibiens, les mammifères terrestres, les poissons d’eau douce et reptiles.\nChaque jeu de données contient 8 champs :\n\nDESC_ENTIT : Signification de l’entité géographique\nGRAND_GROUPE : Classification taxonomique\nPRODUCTEUR : Ministère producteur des données\nNOM_FRANCA : Nom français officiel de l’espèce utilisé au Québec\nNOM_ANGLA : Nom anglais de l’espèce\nNOM_SCIENT : Nom scientifique de l’espèce\nFAMILLE : Famille de l’espèce dans le système de classification\nDATE_MAJ : Année de mise à jour des données\n\n\n\n\nLes aires protégées ont été téléchargées depuis le portail web donneesquebec le 13 novembre 2023 et ont été mises à jour pour la dernière fois le 3 novembre 2023. Les données téléchargées sont disponibles dans le dossier data_raw. Seule la couche ‘Aires protégées du registre’ a été utilisée, et aucune distinction n’est faite entre les différents types d’aires protégées.\n\n\n\nLe jeu de données sur les aires protégées contient plusieurs types d’aires protégées qui peuvent se chevaucher. Le chevauchement pourrait dupliquer la zone protégée et biaiser le calcul du SPI. Pour supprimer le chevauchement entre les différentes aires protégées, la fonction st_union du package sf a été utilisée pour faire l’union des polygones qui se chevauchent. La couche résultante est disponible dans le dossier data sous le nom aires_union.gpkg.\nPour l’analyse à l’échelle du Québec, toutes les aires protégées ont été utilisées. Pour l’analyse à l’échelle du sud et du nord du Québec, la couche d’aires protégées a été ‘coupée’ pour ne conserver que la portion des aires qui se trouvent au sud ou au nord du 50e parallèle. La même procédure a été utilisée pour les cartes de répartition. Les analyses pour l’ensemble du Québec et pour chacune des régions ont été effectuées séparément.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Aires de distribution",
+      "Méthodologie"
+    ]
+  },
+  {
+    "objectID": "0_Ranges_methodo.html#exécution-des-calculs",
+    "href": "0_Ranges_methodo.html#exécution-des-calculs",
+    "title": "Méthodologie",
+    "section": "",
+    "text": "Les calculs sont détaillés et les scripts présentés sur la page du répertoire GitHub.\nL’habitat protégé est calculé par espèce et par année en faisant l’intersection entre les occurrences et les aires protégées. De plus, l’analyse est effectuée pour l’ensemble du Québec et pour les régions sous (sud) et au dessus (nord du Québec) du 50e parallèle.\nspi &lt;- function(range_maps, aires_prot){    \n    intersect &lt;- suppressWarnings(sf::st_intersection(range_maps, aires_prot))\n    SPA &lt;- sf::st_area(intersect) |&gt; as.numeric() |&gt; suppressWarnings() |&gt; sum()\n    \n    if (length(SPA) == 0) return(0)\n\n    SPI &lt;- SPA / sum(as.numeric(sf::st_area(range_maps)))\n    \n    return(SPI)\n}",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Aires de distribution",
+      "Méthodologie"
+    ]
+  },
+  {
+    "objectID": "0_Ranges_methodo.html#accès-aux-résultats",
+    "href": "0_Ranges_methodo.html#accès-aux-résultats",
+    "title": "Méthodologie",
+    "section": "",
+    "text": "Les résultats par espèce sont enregistrés dans le fichier results/SPI_ranges.csv du répertoire GitHub.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Aires de distribution",
+      "Méthodologie"
+    ]
+  },
+  {
+    "objectID": "0_Ranges_methodo.html#données",
+    "href": "0_Ranges_methodo.html#données",
+    "title": "Méthodologie",
+    "section": "",
+    "text": "Les cartes de répartition ont été obtenues depuis le portail web donneesquebec et ont été téléchargées le 13 novembre 2023. Ces cartes de répartition ont été produites par le MELCCFP et ont été mises à jour pour la dernière fois le 11 septembre 2023. Elles sont disponibles dans le dossier data_raw, où chaque fichier .gpkg est nommé d’après un groupe d’espèces. On y retrouve les amphibiens, les mammifères terrestres, les poissons d’eau douce et reptiles.\nChaque jeu de données contient 8 champs :\n\nDESC_ENTIT : Signification de l’entité géographique\nGRAND_GROUPE : Classification taxonomique\nPRODUCTEUR : Ministère producteur des données\nNOM_FRANCA : Nom français officiel de l’espèce utilisé au Québec\nNOM_ANGLA : Nom anglais de l’espèce\nNOM_SCIENT : Nom scientifique de l’espèce\nFAMILLE : Famille de l’espèce dans le système de classification\nDATE_MAJ : Année de mise à jour des données\n\n\n\n\nLes aires protégées ont été téléchargées depuis le portail web donneesquebec le 13 novembre 2023 et ont été mises à jour pour la dernière fois le 3 novembre 2023. Les données téléchargées sont disponibles dans le dossier data_raw. Seule la couche ‘Aires protégées du registre’ a été utilisée, et aucune distinction n’est faite entre les différents types d’aires protégées.\n\n\n\nLe jeu de données sur les aires protégées contient plusieurs types d’aires protégées qui peuvent se chevaucher. Le chevauchement pourrait dupliquer la zone protégée et biaiser le calcul du SPI. Pour supprimer le chevauchement entre les différentes aires protégées, la fonction st_union du package sf a été utilisée pour faire l’union des polygones qui se chevauchent. La couche résultante est disponible dans le dossier data sous le nom aires_union.gpkg.\nPour l’analyse à l’échelle du Québec, toutes les aires protégées ont été utilisées. Pour l’analyse à l’échelle du sud et du nord du Québec, la couche d’aires protégées a été ‘coupée’ pour ne conserver que la portion des aires qui se trouvent au sud ou au nord du 50e parallèle. La même procédure a été utilisée pour les cartes de répartition. Les analyses pour l’ensemble du Québec et pour chacune des régions ont été effectuées séparément.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Aires de distribution",
+      "Méthodologie"
+    ]
+  },
+  {
+    "objectID": "0_Occurrences_methodo.html",
+    "href": "0_Occurrences_methodo.html",
+    "title": "Méthodologie",
+    "section": "",
+    "text": "L’indicateur de biodiversité SPI mesure l’habitat des espèces protégées. Il est calculé comme le ratio de la superficie de l’habitat des espèces protégées à la superficie totale de l’habitat des espèces.\nLa protection des espèces est estimée avec les habitats où elles ont été observées (occurences du CDPNQ) et les aires protégées inscrites au registre du Québec. Le score provient de superposition des habitats et des aires protégées de façon à extraire une proportion des habitats qui se retrouvent dans une aire protégée. Le code source utilisé pour le calcul du SPI est accessible sur GitHub.\n\n\nLes calculs sont détaillés et les scripts présentés sur la page du répertoire GitHub.\nL’habitat protégé est calculé par espèce et par année en faisant l’intersection entre les occurrences et les aires protégées. De plus, l’analyse est effectuée pour l’ensemble du Québec et pour les régions sous (sud) et au dessus (nord du Québec) du 50e parallèle.\nspi &lt;- function(range_maps, aires_prot){    \n    intersect &lt;- suppressWarnings(sf::st_intersection(range_maps, aires_prot))\n    SPA &lt;- sf::st_area(intersect) |&gt; as.numeric() |&gt; suppressWarnings() |&gt; sum()\n    \n    if (length(SPA) == 0) return(0)\n\n    SPI &lt;- SPA / sum(as.numeric(sf::st_area(range_maps)))\n    \n    return(SPI)\n}\n\n\n\nLes résultats par espèce sont enregistrés dans le fichier results/SPI_OCC.csv du répertoire GitHub.\n\n\n\n\n\nLes occurrences ont été téléchargées depuis le portail web donneesquebec le 6 décembre 2023 et ont été mises à jour pour la dernière fois le 30 novembre 2023. Aucune modification n’a été apportée aux données, elles ont été utilisées telle-quelles.\n\n\n\nLes aires protégées ont été téléchargées depuis le portail web donneesquebec le 13 novembre 2023 et ont été mises à jour pour la dernière fois le 3 novembre 2023. Seule la couche ‘Aires protégées du registre’ a été utilisée, et aucune distinction n’est faite entre les différents types d’aires protégées.\n\n\n\nLe jeu de données sur les aires protégées contient plusieurs types d’aires protégées qui peuvent se chevaucher. Le chevauchement pourrait dupliquer la zone protégée et biaiser le calcul du SPI. Pour supprimer le chevauchement entre les différentes aires protégées, la fonction st_union du package sf a été utilisée pour faire l’union des polygones qui se chevauchent.\nPour l’analyse à l’échelle du Québec, toutes les aires protégées ont été utilisées. Pour l’analyse à l’échelle du sud et du nord du Québec, la couche d’aires protégées a été ‘coupée’ pour ne conserver que la portion des aires qui se trouvent au sud ou au nord du 50e parallèle. La même procédure a été utilisée pour les occurences. Les analyses pour l’ensemble du Québec et pour chacune des régions ont été effectuées séparément.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Occurrences",
+      "Méthodologie"
+    ]
+  },
+  {
+    "objectID": "0_Occurrences_methodo.html#exécution-des-calculs",
+    "href": "0_Occurrences_methodo.html#exécution-des-calculs",
+    "title": "Méthodologie",
+    "section": "",
+    "text": "Les calculs sont détaillés et les scripts présentés sur la page du répertoire GitHub.\nL’habitat protégé est calculé par espèce et par année en faisant l’intersection entre les occurrences et les aires protégées. De plus, l’analyse est effectuée pour l’ensemble du Québec et pour les régions sous (sud) et au dessus (nord du Québec) du 50e parallèle.\nspi &lt;- function(range_maps, aires_prot){    \n    intersect &lt;- suppressWarnings(sf::st_intersection(range_maps, aires_prot))\n    SPA &lt;- sf::st_area(intersect) |&gt; as.numeric() |&gt; suppressWarnings() |&gt; sum()\n    \n    if (length(SPA) == 0) return(0)\n\n    SPI &lt;- SPA / sum(as.numeric(sf::st_area(range_maps)))\n    \n    return(SPI)\n}",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Occurrences",
+      "Méthodologie"
+    ]
+  },
+  {
+    "objectID": "0_Occurrences_methodo.html#accès-aux-résultats",
+    "href": "0_Occurrences_methodo.html#accès-aux-résultats",
+    "title": "Méthodologie",
+    "section": "",
+    "text": "Les résultats par espèce sont enregistrés dans le fichier results/SPI_OCC.csv du répertoire GitHub.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Occurrences",
+      "Méthodologie"
+    ]
+  },
+  {
+    "objectID": "0_Occurrences_methodo.html#données",
+    "href": "0_Occurrences_methodo.html#données",
+    "title": "Méthodologie",
+    "section": "",
+    "text": "Les occurrences ont été téléchargées depuis le portail web donneesquebec le 6 décembre 2023 et ont été mises à jour pour la dernière fois le 30 novembre 2023. Aucune modification n’a été apportée aux données, elles ont été utilisées telle-quelles.\n\n\n\nLes aires protégées ont été téléchargées depuis le portail web donneesquebec le 13 novembre 2023 et ont été mises à jour pour la dernière fois le 3 novembre 2023. Seule la couche ‘Aires protégées du registre’ a été utilisée, et aucune distinction n’est faite entre les différents types d’aires protégées.\n\n\n\nLe jeu de données sur les aires protégées contient plusieurs types d’aires protégées qui peuvent se chevaucher. Le chevauchement pourrait dupliquer la zone protégée et biaiser le calcul du SPI. Pour supprimer le chevauchement entre les différentes aires protégées, la fonction st_union du package sf a été utilisée pour faire l’union des polygones qui se chevauchent.\nPour l’analyse à l’échelle du Québec, toutes les aires protégées ont été utilisées. Pour l’analyse à l’échelle du sud et du nord du Québec, la couche d’aires protégées a été ‘coupée’ pour ne conserver que la portion des aires qui se trouvent au sud ou au nord du 50e parallèle. La même procédure a été utilisée pour les occurences. Les analyses pour l’ensemble du Québec et pour chacune des régions ont été effectuées séparément.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Occurrences",
+      "Méthodologie"
+    ]
+  },
+  {
+    "objectID": "indic_protec_esp.html",
+    "href": "indic_protec_esp.html",
+    "title": "Indice de protection des espèces",
+    "section": "",
+    "text": "L’indice de protection des espèces est un indicateur de biodiversité qui vise à mesurer le niveau de protection de l’habitat des espèces. Il peut être calculer à l’échelle spécifique et global. Il correspond au ratio entre la superficie de l’habitat inclut dans une aire protégée et la superficie totale de l’habitat d’une espèce.\nAjouter refs\n\n\nEn 2023, le Québec présente une superficie totale d’aire protégée équivalent à 28 060 703 ha, soit plus de 69 millions d’acres. Ces données sont fournies par le Ministère de l’Environnement, de la Lutte contre les Changements Climatiques, de la Faune et des Parcs et sont en accès libre. Ici, seules les aires protégées du registre, sans distinction, ont été considérées (téléchargées le 31-08-2023).\n\n\n\n\n\n\n\n\nFigure 1: Carte des aires protégées actuelles.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Superficie cumulée des aires protégées au Québec au cours du temps.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Indice de protection des espèces"
+    ]
+  },
+  {
+    "objectID": "indic_protec_esp.html#représentation-actuelle-des-aires-protégées-du-québec",
+    "href": "indic_protec_esp.html#représentation-actuelle-des-aires-protégées-du-québec",
+    "title": "Indice de protection des espèces",
+    "section": "",
+    "text": "En 2023, le Québec présente une superficie totale d’aire protégée équivalent à 28 060 703 ha, soit plus de 69 millions d’acres. Ces données sont fournies par le Ministère de l’Environnement, de la Lutte contre les Changements Climatiques, de la Faune et des Parcs et sont en accès libre. Ici, seules les aires protégées du registre, sans distinction, ont été considérées (téléchargées le 31-08-2023).\n\n\n\n\n\n\n\n\nFigure 1: Carte des aires protégées actuelles.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Indice de protection des espèces"
+    ]
+  },
+  {
+    "objectID": "indic_protec_esp.html#augmentation-de-laire-de-surface-protégée-au-québec-au-cours-du-temps",
+    "href": "indic_protec_esp.html#augmentation-de-laire-de-surface-protégée-au-québec-au-cours-du-temps",
+    "title": "Indice de protection des espèces",
+    "section": "",
+    "text": "Figure 2: Superficie cumulée des aires protégées au Québec au cours du temps.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Indice de protection des espèces"
+    ]
+  },
+  {
+    "objectID": "2_Ranges_SPI_visual.html",
+    "href": "2_Ranges_SPI_visual.html",
+    "title": "Visualisation",
+    "section": "",
+    "text": "Augmentation minimale de 1% pour Salamandre sombre des montagnes (Desmognathus ochrophaeus)\nAugmentation maximale de 70% pour Rainette faux-grillon boréale (Pseudacris maculata)\nAvec une moyenne de 11% (sd = 6 %) pour les 225 espèces considérées\n\n\n\n\n\n\n\n\nFigure 1: Valeur moyenne et par espèce de l’indice de protection des espèces à partir des aires de distribution des espèces (n = 225). La courbe bleue représente le SPI moyen, les courbes verte et pourpre représentent les espèces la moins et la plus protégée, respectivement.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Aires de distribution",
+      "Visualisation"
+    ]
+  },
+  {
+    "objectID": "2_Ranges_SPI_visual.html#augmentation-de-la-protection-de-toutes-les-espèces-ciblées-au-cours-des-61-dernières-années",
+    "href": "2_Ranges_SPI_visual.html#augmentation-de-la-protection-de-toutes-les-espèces-ciblées-au-cours-des-61-dernières-années",
+    "title": "Visualisation",
+    "section": "",
+    "text": "Augmentation minimale de 1% pour Salamandre sombre des montagnes (Desmognathus ochrophaeus)\nAugmentation maximale de 70% pour Rainette faux-grillon boréale (Pseudacris maculata)\nAvec une moyenne de 11% (sd = 6 %) pour les 225 espèces considérées\n\n\n\n\n\n\n\n\nFigure 1: Valeur moyenne et par espèce de l’indice de protection des espèces à partir des aires de distribution des espèces (n = 225). La courbe bleue représente le SPI moyen, les courbes verte et pourpre représentent les espèces la moins et la plus protégée, respectivement.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Aires de distribution",
+      "Visualisation"
+    ]
+  },
+  {
+    "objectID": "2_Ranges_SPI_visual.html#valeurs-des-indices-de-protection-des-espèces-en-2023",
+    "href": "2_Ranges_SPI_visual.html#valeurs-des-indices-de-protection-des-espèces-en-2023",
+    "title": "Visualisation",
+    "section": "Valeurs des indices de protection des espèces en 2023",
+    "text": "Valeurs des indices de protection des espèces en 2023\n\n\n\n\n\n\n\n\nFigure 2: Valeur de l’indice de protection des espèces en 2023, à partir des données d’aires de répartition (n = 225).",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Aires de distribution",
+      "Visualisation"
+    ]
+  },
+  {
+    "objectID": "2_Ranges_SPI_visual.html#etat-de-la-protection-de-la-portion-nordique-vs.-du-sud-des-aires-de-distribution-en-2023",
+    "href": "2_Ranges_SPI_visual.html#etat-de-la-protection-de-la-portion-nordique-vs.-du-sud-des-aires-de-distribution-en-2023",
+    "title": "Visualisation",
+    "section": "Etat de la protection de la portion nordique vs. du Sud des aires de distribution en 2023",
+    "text": "Etat de la protection de la portion nordique vs. du Sud des aires de distribution en 2023\nLes espèces dont l’aire de distribution se trouve exclusivement au Nord (n = 7) présentent un SPI moyen de 24.66­­% (sd = 21.34­%).\nLes espèces dont l’aire de distribution se trouve exclusivement au Sud (n = 98) présentent un SPI moyen 8­% (sd = 4.85%).\n\nNordSudNord-Sud\n\n\n\n\n\n\n\n\n\n\nFigure 3: Valeur de l’indice de protection des espèces en 2023, à partir des données d’aires de distribution (n = 225) pour les espèces dont l’aire de distribution se trouve exclusivement dans le Nord.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: Valeur de l’indice de protection des espèces en 2023, à partir des données d’aires de distribution (n = 225) pour les espèces dont l’aire de distribution se situe exclusivement dans le Sud.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 5: Valeur de l’indice de protection des espèces en 2023, à partir des données d’aires de distribution (n = 225) pour les espèces dont l’aire de distribution chevauche la limite Nord-Sud.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Aires de distribution",
+      "Visualisation"
+    ]
+  },
+  {
+    "objectID": "2_Ranges_SPI_visual.html#etat-de-la-protection-des-espèces-par-groupe-taxonomique-en-2023",
+    "href": "2_Ranges_SPI_visual.html#etat-de-la-protection-des-espèces-par-groupe-taxonomique-en-2023",
+    "title": "Visualisation",
+    "section": "Etat de la protection des espèces par groupe taxonomique en 2023",
+    "text": "Etat de la protection des espèces par groupe taxonomique en 2023\nLes Amphibiens présentent un SPI moyen de 0.12 (sd = 0.14, n = 21).\nLes Mammifères présentent un SPI moyen de 0.13 (sd = 0.05, n = 69).\nLes Poissons présentent un SPI moyen de 0.11 (sd = 0.05, n = 118).\nLes Reptiles présentent un SPI moyen de 0.08 (sd = 0.03, n = 17).\n\n\n\n\n\n\n\n\nFigure 6: Valeur de l’indice de protection des espèces en 2023, à partir des données d’aires de distribution (n = 225), organisé par groupe taxonomique.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Aires de distribution",
+      "Visualisation"
+    ]
+  },
+  {
+    "objectID": "2_Occurrences_SPI_visual.html",
+    "href": "2_Occurrences_SPI_visual.html",
+    "title": "Visualisation",
+    "section": "",
+    "text": "Figure 1: Valeur moyenne et par espèce de l’indice de protection des espèces à partir des données d’occurrence des espèces (n = 503). La courbe bleue représente le SPI moyen, les courbes verte et pourpre représentent les espèces la moins et la plus protégée, respectivement.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Occurrences",
+      "Visualisation"
+    ]
+  },
+  {
+    "objectID": "2_Occurrences_SPI_visual.html#augmentation-de-la-protection-de-toutes-les-espèces-ciblées-au-cours-des-61-dernières-années",
+    "href": "2_Occurrences_SPI_visual.html#augmentation-de-la-protection-de-toutes-les-espèces-ciblées-au-cours-des-61-dernières-années",
+    "title": "Visualisation",
+    "section": "",
+    "text": "Figure 1: Valeur moyenne et par espèce de l’indice de protection des espèces à partir des données d’occurrence des espèces (n = 503). La courbe bleue représente le SPI moyen, les courbes verte et pourpre représentent les espèces la moins et la plus protégée, respectivement.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Occurrences",
+      "Visualisation"
+    ]
+  },
+  {
+    "objectID": "2_Occurrences_SPI_visual.html#valeurs-des-indices-de-protection-des-espèces-en-2023",
+    "href": "2_Occurrences_SPI_visual.html#valeurs-des-indices-de-protection-des-espèces-en-2023",
+    "title": "Visualisation",
+    "section": "Valeurs des indices de protection des espèces en 2023",
+    "text": "Valeurs des indices de protection des espèces en 2023\n\n\n\n\n\n\n\n\nFigure 2: Valeur de l’indice de protection des espèces en 2023, à partir des données d’occurrences (n = 503).",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Occurrences",
+      "Visualisation"
+    ]
+  },
+  {
+    "objectID": "2_Occurrences_SPI_visual.html#etat-de-la-protection-des-occurrences-despèce-situées-au-nord-vs.-au-sud-en-2023",
+    "href": "2_Occurrences_SPI_visual.html#etat-de-la-protection-des-occurrences-despèce-situées-au-nord-vs.-au-sud-en-2023",
+    "title": "Visualisation",
+    "section": "Etat de la protection des occurrences d’espèce situées au nord vs. au Sud en 2023",
+    "text": "Etat de la protection des occurrences d’espèce situées au nord vs. au Sud en 2023\nLes espèces dont les occurrences sont présentent exclusivement dans le Nord (n = 96) présentent un SPI moyen de 41.83% (sd = 44.11%).\nLes espèces dont les occurrences sont présentent uniquement dans le Sud (n = 349) présentent un SPI moyen 32.04% (sd = 33.84%).\n\nNordSudNord-Sud\n\n\n\n\n\n\n\n\n\n\nFigure 3: Valeur de l’indice de protection des espèces en 2023, à partir des données d’occurrences (n = 503), pour les occurrences d’espèce retrouvées exclusivement dans le nord.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: Valeur de l’indice de protection des espèces en 2023, à partir des données d’occurrences (n = 503), dont les occurrences d’espèce sont retrouvées exclusivement dans le sud.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 5: Valeur de l’indice de protection des espèces en 2023, à partir des données d’occurrences (n = 503), dont les occurrences d’espèce sont retrouvées dans le nord et le sud simultanément.",
+    "crumbs": [
+      "Indice de Protection des Espèces",
+      "Occurrences",
+      "Visualisation"
+    ]
+  }
+]
